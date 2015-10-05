@@ -1,0 +1,1 @@
+app.controller("searchCtrl",["$scope",function(e){e.title="Search view"}]);

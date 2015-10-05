@@ -1,0 +1,1 @@
+app.controller("settingsCtrl",["$scope",function(t){t.title="Settings view"}]);
