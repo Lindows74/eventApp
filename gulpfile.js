@@ -6,7 +6,9 @@ gulp.task("watch", function(){
   watch('www/css/**/*.sass', function (e) {
     console.log(e.path);
     gulp.src('www/css/**/*.sass')
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-reset-scss').includePath
+    }))
     .pipe(gulp.dest('www/css/'));
   });
 });
