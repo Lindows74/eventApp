@@ -1,0 +1,1 @@
+app.controller("favoritesCtrl",["$scope",function(t){t.title="Favorites view"}]);

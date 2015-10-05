@@ -5,22 +5,19 @@
 	font: 
 		family: 'Lato' 
 		weight: 300
-		size: 24px
+		size: 20px
 	text-transform: uppercase
-	text-decoration: underline
-	color: white
 
 @mixin standard()
 	font: 
 		family: 'Lato' 
 		weight: 300
-		size: 24px
-	color: white
+		size: 16px
 
 
-@mixin pink-text()
+@mixin pink-text($size)
 	font: 
 		family: 'Lato' 
 		weight: 300
-		size: 30px
+		size: $size
 	color: $pink
