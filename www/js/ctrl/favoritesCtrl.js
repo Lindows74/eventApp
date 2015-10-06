@@ -5,22 +5,8 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
 
     $scope.page = "favorites";
 
+    // .delete-tab-open    öppnar klassen
 
-    $scope.openTrash = function($event){
-
-    	// console.log(angular.element($event.target).parent());
-    	
-    	document.getElementById('delete-tab').style.right = "0%";
-
-    }
-
-    $scope.closeTrash = function($event){
-
-    	// console.log(angular.element($event.target).parent());
-    	
-    	document.getElementById('delete-tab').style.right = "-45%";
-
-    }
-
+    // .delete-tab-close    Stänger klassen
 
 }]);
