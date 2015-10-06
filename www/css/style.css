@@ -207,7 +207,21 @@ ul {
       font-size: 16px;
       font-size: 12px; }
 
-#delete-tab {
+.delete-tab-open {
+  background: radial-gradient(at left center, #248ab9, #403f90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all(700ms) ease-in-out; }
+
+.delete-tab-close {
   background: radial-gradient(at left center, #248ab9, #403f90);
   display: flex;
   justify-content: center;
