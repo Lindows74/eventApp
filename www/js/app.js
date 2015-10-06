@@ -10,10 +10,11 @@ var app = angular.module('starter', ['ionic'])
     }
   });
 })
-.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider) {
   $httpProvider.defaults.useXDomain = true;
   $httpProvider.defaults.withCredentials = true;
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  $ionicConfigProvider.views.transition('fade-in');
   
   $stateProvider
   .state('home', {

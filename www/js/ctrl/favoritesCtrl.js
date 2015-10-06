@@ -2,6 +2,10 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
  
     $scope.title = "Favorites view";
 
+
+    $scope.page = "favorites";
+
+
     $scope.openTrash = function($event){
 
     	// console.log(angular.element($event.target).parent());
@@ -17,5 +21,6 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
     	document.getElementById('delete-tab').style.right = "-45%";
 
     }
+
 
 }]);

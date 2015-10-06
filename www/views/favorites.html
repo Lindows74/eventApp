@@ -5,7 +5,6 @@
 <h1 style="color: white">{{title}}</h1>
 
 
-
 <ul>
 	<li on-swipe-left="openTrash($event)" on-swipe-right="closeTrash($event)">
 		<span></span>
@@ -27,34 +26,5 @@
 	</li>
 </ul>
 
-<div class="menubar">
-	<a ng-href="#/">
-		<div class="tab">
-		
-			<i class="fa fa-list-ul"></i>
-	
-		</div>
-	</a>
-	<a ng-href="#/search">
-		<div class="tab">
-		
-			<i class="fa fa-search"></i>
+<navmenu></navmenu>
 
-		</div>
-	</a>
-	<a ng-href="#/favorites">
-		<div class="tab active">
-		
-			<i class="fa fa-heart-o"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/settings">
-		<div class="tab">
-		
-			<i class="fa fa-cog"></i>
-	
-		</div>
-	</a>	
-	
-</div>
