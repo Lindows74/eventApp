@@ -5,6 +5,28 @@
 <h1 style="color: white">{{title}}</h1>
 
 
+
+<ul>
+	<li on-swipe-left="openTrash($event)" on-swipe-right="closeTrash($event)">
+		<span></span>
+		<div class="search-desc-wrapper">
+			<div class="search-title">title</div>
+			<div class="search-desc">company - karlshamn</div>
+		</div>
+		<div class="search-desc-date">1/10/2015</div>
+		<div id="delete-tab"><i class="fa fa-trash-o"></i></div>
+	</li>
+	<li on-swipe-left="openTrash($event)">
+		<span></span>
+		<div class="search-desc-wrapper">
+			<div class="search-title">title</div>
+			<div class="search-desc">company - karlshamn</div>
+		</div>
+		<div class="search-desc-date">1/10/2015</div>
+		<div id="delete-tab"><i class="fa fa-trash-o"></i></div>
+	</li>
+</ul>
+
 <div class="menubar">
 	<a ng-href="#/">
 		<div class="tab">
