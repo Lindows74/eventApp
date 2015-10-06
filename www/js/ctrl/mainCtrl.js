@@ -7,5 +7,9 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
     $scope.feed = feedFact.getFeed();
     
     console.log(feedFact.getFeed());
+    
+    $scope.likePost =  function($index){
+        alert("likeing post? " + $scope.feed[$index].title);
+    }
 
 }]);

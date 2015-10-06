@@ -4,7 +4,7 @@
 	
 	<div class="item-wrapper" ng-repeat="item in feed">
 		<div class="image-item">
-			<img ng-src="{{item.img}}">
+			<img ng-src="{{item.img}}" on-double-tap="likePost($index)">
 
 		</div>
 		<div class="text-item">
@@ -12,7 +12,7 @@
 			<div id="text-item-header">
 
 				<div id="title">{{item.title}}</div>
-				<div id="likes"><span>{{item.likes}}</span><i class="fa fa-heart-o"></i></div>
+				<div id="likes" ng-click="likePost($index)"><span>{{item.likes}}</span><i class="fa fa-heart-o"></i></div>
 
 			</div>
 			<div id="desc">{{item.description}}</div>
