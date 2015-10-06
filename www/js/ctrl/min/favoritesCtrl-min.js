@@ -1,1 +1,1 @@
-app.controller("favoritesCtrl",["$scope",function(t){t.title="Favorites view"}]);
+app.controller("favoritesCtrl",["$scope",function(e){e.title="Favorites view",e.page="favorites",e.openTrash=function(e){document.getElementById("delete-tab").style.right="0%"},e.closeTrash=function(e){document.getElementById("delete-tab").style.right="-45%"}}]);

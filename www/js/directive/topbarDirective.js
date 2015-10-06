@@ -6,6 +6,6 @@ app.directive('topbar', function() {
         $scope.location = "Karlshamn";
         
     }],
-    templateUrl: '/js/directive/template/topBar.html'
+    templateUrl: 'js/directive/template/topBar.html'
   };
 });

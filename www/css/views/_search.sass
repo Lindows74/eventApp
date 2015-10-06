@@ -1,3 +1,25 @@
+
+.date-search-wrapper
+	width: 90%
+	+flex(space-between)
+	margin: 20px auto
+
+	.date-btn
+		width: 70px
+		height: 20px
+		border: 1px solid white 
+		border-radius: 20px
+		+standard()
+		color: white
+		font-size: 10px
+		+flex(center)
+		text-transform: uppercase
+
+	.date-active
+		background: rgba(255,255,255,0.3)
+
+
+
 .search-wrapper
 	+flex(center)
 	padding: 20px
@@ -11,6 +33,57 @@
 		color: $light-blue
 		padding-left: 20px
 		margin-left: 20px
+		
 
 		&::-webkit-input-placeholder 
 			color: $light-blue
+			text-transform: uppercase
+			letter-spacing: 5px
+
+
+ul
+	width: 98%
+	display: block
+	margin: 0 auto
+
+	li 
+		position: relative
+		display: inline
+		+standard()
+		color: white
+		text-transform: capitalize
+		margin-bottom: 8px
+		background: rgba(255,255,255,0.08)
+		padding: 10px 15px
+		-webkit-box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
+		-moz-box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
+		box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
+		+flex(space-between)
+
+		span
+			position: absolute
+			top: 0
+			left: 0
+			width: 3px 
+			height: 100%
+			background: radial-gradient(at center bottom,     #2062cf, #0f3a82)
+
+
+		.search-title
+			+title()
+			font-size: 16px
+
+		.search-desc
+			+standard()
+			font-size: 14px
+
+		.search-desc-date
+			+standard()
+			font-size: 12px
+
+	
+
+
+
+
+
