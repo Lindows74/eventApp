@@ -40,48 +40,50 @@
 			text-transform: uppercase
 			letter-spacing: 5px
 
-
-ul
-	width: 98%
-	display: block
-	margin: 20px auto
-
-	li 
-		position: relative
-		display: inline
-		+standard()
-		color: white
-		text-transform: capitalize
-		margin-bottom: 8px
-		background: rgba(255,255,255,0.08)
-		padding: 10px 15px
-		-webkit-box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
-		-moz-box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
-		box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
-		+flex(space-between)
-
-		span
-			position: absolute
-			top: 0
-			left: 0
-			width: 3px 
-			height: 100%
-			background: radial-gradient(at center bottom,     #2062cf, #0f3a82)
+.feed
 
 
-		.search-title
-			+title()
-			font-size: 16px
+	ul
+		width: 98%
+		display: block
+		margin: 20px auto
 
-		.search-desc
+		li 
+			position: relative
+			display: inline
 			+standard()
-			font-size: 14px
+			color: white
+			text-transform: capitalize
+			margin-bottom: 8px
+			background: rgba(255,255,255,0.08)
+			padding: 10px 15px
+			-webkit-box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
+			-moz-box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
+			box-shadow: inset 1px 1px 5px 0px rgba(255,255,255,0.2)
+			+flex(space-between)
 
-		.search-desc-date
-			+standard()
-			font-size: 12px
+			span
+				position: absolute
+				top: 0
+				left: 0
+				width: 3px 
+				height: 100%
+				background: radial-gradient(at center bottom,     #2062cf, #0f3a82)
 
-	
+
+			.search-title
+				+title()
+				font-size: 16px
+
+			.search-desc
+				+standard()
+				font-size: 14px
+
+			.search-desc-date
+				+standard()
+				font-size: 12px
+
+		
 
 
 
