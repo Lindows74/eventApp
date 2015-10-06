@@ -4,9 +4,6 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
 
 
     $scope.page = "favorites";
-
-    // .delete-tab-open    öppnar klassen
-    // .delete-tab-close    Stänger klassen
     
     $scope.favorites = [
         {
@@ -21,6 +18,7 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
             "date": "10-11-2015",
             "delmenu": false
         },
+
     ];
     
     $scope.delMenu = function($index, eventType){
