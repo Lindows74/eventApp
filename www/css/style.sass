@@ -2,7 +2,26 @@
 // Variables, fonts
 @import 'tools/var'
 @import 'tools/fonts'
+@import 'tools/fontawesome/font-awesome.min.css'
+
+//Mixins
+@import 'tools/mixins'
+
+//modules
+@import 'tools/modules/menubar'
+@import 'tools/modules/topbar'
 
 
 //Views
 @import 'views/_main.sass'
+@import 'views/_search.sass'
+
+p 
+	margin: 0
+
+.pane
+	background: radial-gradient(at center bottom,     #181d28, #181d29)
+
+
+::-webkit-scrollbar 
+	display: none
