@@ -2,21 +2,16 @@
 
 <h1 style="color: white">{{title}}</h1>
 
-<<<<<<< HEAD
-<navmenu></navmenu>
-=======
 <ul>
-	<li>
+	<li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')">
 		<span></span>
 		<div class="search-desc-wrapper">
-			<div class="search-title">title</div>
-			<div class="search-desc">company - karlshamn</div>
+			<div class="search-title">{{ item.title }}</div>
+			<div class="search-desc">{{ item.company }}</div>
 		</div>
-		<div class="search-desc-date">1/10/2015</div>
-		<div class="delete-tab-close"><i class="fa fa-trash-o"></i></div>
+		<div class="search-desc-date">{{ item.date }}</div>
+		<div ng-click="delItem($index)" ng-class="(favorites[$index].delmenu) ? 'delete-tab-open' : 'delete-tab-close'"><i class="fa fa-trash-o"></i></div>
 	</li>
 </ul>
 
 <navmenu></navmenu>
-
->>>>>>> test
