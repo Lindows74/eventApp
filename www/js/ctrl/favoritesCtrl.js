@@ -2,6 +2,7 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
  
     $scope.title = "Favorites view";
 
+
     $scope.page = "favorites";
 
 
@@ -21,8 +22,5 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
 
     }
 
-
-
-    
 
 }]);
