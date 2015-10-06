@@ -1,6 +1,6 @@
 <topbar></topbar>
 
-<h1 style="color: white">{{title}}</h1>
+<div class="feed">
 
 <ul>
 	<li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')">
@@ -13,5 +13,6 @@
 		<div ng-click="delItem($index)" ng-class="(favorites[$index].delmenu) ? 'delete-tab-open' : 'delete-tab-close'"><i class="fa fa-trash-o"></i></div>
 	</li>
 </ul>
+</div>
 
 <navmenu></navmenu>
