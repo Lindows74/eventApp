@@ -1,3 +1,21 @@
+
+.date-search-wrapper
+	width: 90%
+	+flex(space-between)
+	margin: 20px auto
+
+	.date-btn
+		width: 70px
+		height: 20px
+		border: 1px solid white 
+		border-radius: 20px
+		+standard()
+		color: white
+		font-size: 12px
+		+flex(center)
+
+
+
 .search-wrapper
 	+flex(center)
 	padding: 20px
@@ -11,6 +29,9 @@
 		color: $light-blue
 		padding-left: 20px
 		margin-left: 20px
+		
 
 		&::-webkit-input-placeholder 
 			color: $light-blue
+			text-transform: uppercase
+			letter-spacing: 5px

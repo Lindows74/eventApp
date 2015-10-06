@@ -35,10 +35,11 @@
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
-  color: #5b677b;
+  color: white;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  letter-spacing: 5px; }
 
 .feed {
   width: 100%;
@@ -118,6 +119,26 @@
         justify-content: space-between;
         align-items: center; }
 
+.date-search-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto; }
+  .date-search-wrapper .date-btn {
+    width: 70px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
 .search-wrapper {
   display: flex;
   justify-content: center;
@@ -133,7 +154,9 @@
     padding-left: 20px;
     margin-left: 20px; }
     .search-wrapper input::-webkit-input-placeholder {
-      color: #5b677b; }
+      color: #5b677b;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
 
 p {
   margin: 0; }
