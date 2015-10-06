@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="topbar">
 	<p>vad händer</p><p style="font-size: 12px">karlshamn</p>
 </div>
@@ -31,20 +32,39 @@
 	<div class="item-wrapper">
 		<div class="image-item">
 			<img src="http://static7.depositphotos.com/1252628/771/v/950/depositphotos_7716883-Music-poster-with-guitar.jpg">
+=======
+<topbar></topbar>
+
+<div class="feed">
+	
+	<div class="item-wrapper" ng-repeat="item in feed">
+		<div class="image-item">
+			<img ng-src="{{item.img}}">
+>>>>>>> dev
 		</div>
 		<div class="text-item">
 
 			<div id="text-item-header">
 
+<<<<<<< HEAD
 				<div id="title">title</div>
 				<div id="likes"><span>12</span><i class="fa fa-heart-o"></i></div>
+=======
+				<div id="title">{{item.title}}</div>
+				<div id="likes"><span>{{item.likes}}</span><i class="fa fa-heart-o"></i></div>
+>>>>>>> dev
 
 			</div>
-			<div id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, eaque.</div>
+			<div id="desc">{{item.description}}</div>
 			<div id="text-item-footer">
 				
+<<<<<<< HEAD
 				<div id="date">1-10-2015</div>
 				<div id="place-desc">&Vin karlshamn</div>
+=======
+				<div id="date">{{item.date}}</div>
+				<div id="place-desc">{{item.company}}</div>
+>>>>>>> dev
 
 			</div>
 
@@ -53,35 +73,4 @@
 
 </div>
 
-
-<div class="menubar">
-	<a ng-href="#/">
-		<div class="tab active">
-		
-			<i class="fa fa-list-ul"></i>
-	
-		</div>
-	</a>
-	<a ng-href="#/search">
-		<div class="tab">
-		
-			<i class="fa fa-search"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/favorites">
-		<div class="tab">
-		
-			<i class="fa fa-heart-o"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/settings">
-		<div class="tab">
-		
-			<i class="fa fa-cog"></i>
-	
-		</div>
-	</a>	
-	
-</div>
+<navmenu></navmenu>
