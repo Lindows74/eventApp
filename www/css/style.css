@@ -59,7 +59,7 @@
       height: 60%;
       overflow: hidden; }
       .feed .item-wrapper .image-item img {
-        max-width: 100%;
+        width: 100%;
         height: auto; }
     .feed .item-wrapper .text-item {
       display: block;
