@@ -1,50 +1,24 @@
-<div class="topbar">
-	<p>vad händer</p><p style="font-size: 14px">karlshamn</p>
-</div>
-
+<topbar></topbar>
 
 <div class="feed">
 	
-	<div class="item-wrapper">
+	<div class="item-wrapper" ng-repeat="item in feed">
 		<div class="image-item">
-			<img src="http://www.blisedd.se/wp-content/uploads/2015/03/langfredag_poster.jpg">
+			<img ng-src="{{item.img}}">
 		</div>
 		<div class="text-item">
 
 			<div id="text-item-header">
 
-				<div id="title">title</div>
-				<div id="likes"><span>24</span><i class="fa fa-heart-o"></i></div>
+				<div id="title">{{item.title}}</div>
+				<div id="likes"><span>{{item.likes}}</span><i class="fa fa-heart-o"></i></div>
 
 			</div>
-			<div id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, eaque.</div>
+			<div id="desc">{{item.description}}</div>
 			<div id="text-item-footer">
 				
-				<div id="date">1-10-2015</div>
-				<div id="place-desc">Harrys karlshamn</div>
-
-			</div>
-
-		</div>
-	</div>
-
-	<div class="item-wrapper">
-		<div class="image-item">
-			<img src="http://www.blisedd.se/wp-content/uploads/2015/03/langfredag_poster.jpg">
-		</div>
-		<div class="text-item">
-
-			<div id="text-item-header">
-
-				<div id="title">title</div>
-				<div id="likes"><span>24</span><i class="fa fa-heart-o"></i></div>
-
-			</div>
-			<div id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, eaque.</div>
-			<div id="text-item-footer">
-				
-				<div id="date">1-10-2015</div>
-				<div id="place-desc">Harrys karlshamn</div>
+				<div id="date">{{item.date}}</div>
+				<div id="place-desc">{{item.company}}</div>
 
 			</div>
 
@@ -53,35 +27,4 @@
 
 </div>
 
-
-<div class="menubar">
-	<a ng-href="#/">
-		<div class="tab active">
-		
-			<i class="fa fa-list-ul"></i>
-	
-		</div>
-	</a>
-	<a ng-href="#/search">
-		<div class="tab">
-		
-			<i class="fa fa-search"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/favorites">
-		<div class="tab">
-		
-			<i class="fa fa-heart-o"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/settings">
-		<div class="tab">
-		
-			<i class="fa fa-cog"></i>
-	
-		</div>
-	</a>	
-	
-</div>
+<navmenu></navmenu>
