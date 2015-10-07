@@ -12,7 +12,9 @@
 			<div id="text-item-header">
 
 				<div id="title">{{item.title}}</div>
-				<div id="likes" ng-click="likePost($index)"><span>{{item.likes}}</span><i class="fa fa-heart-o"></i></div>
+				<div id="likes" ng-click="likePost($index)"><span>{{item.likes}}</span>
+					<i class="fa fa-heart-o"></i> <!-- add active class -->
+				</div>
 
 			</div>
 			<div id="desc">{{item.description}}</div>

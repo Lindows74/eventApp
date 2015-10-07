@@ -10,7 +10,7 @@
 	height: 65px
 	// background: #1a212e
 	background: 
-		image: url('../../../img/menubar.png')
+		image: url('../img/menubar.png')
 		size: cover
 	padding: 10px
 	border-top: 1px solid #313d56
@@ -24,6 +24,7 @@
 		justify-content: center
 		align-items: center
 
+
 	.tab
 		display: flex 
 		justify-content: center
@@ -32,6 +33,30 @@
 			size: 30px
 		color: $light-blue
 
+		span 
+			width: 30px
+			height: 30px
+			background-color: $light-blue
+			-webkit-mask-repeat: no-repeat
 
-	.active
-		color: $pink
+		.feed-icon
+			-webkit-mask-image: url(../img/icons/feed.svg)
+			
+		.search-icon
+			-webkit-mask-image: url(../img/icons/search.svg)
+
+		.favorites-icon
+			-webkit-mask-image: url(../img/icons/favorites.svg)
+		
+		.settings-icon
+			-webkit-mask-image: url(../img/icons/settings.svg)
+
+
+		.active
+			background-color: $orange
+
+
+
+
+
+

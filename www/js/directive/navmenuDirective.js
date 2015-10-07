@@ -4,3 +4,4 @@ app.directive('navmenu', function() {
     templateUrl: 'js/directive/template/navMenu.html'
   };
 });
+

@@ -20,7 +20,7 @@
 
 			img
 				width: 100%
-				height: auto
+				height: 100%
 
 		.text-item
 			display: block
@@ -50,14 +50,20 @@
 				#title
 					+title()
 					text-transform: capitalize
-					border-bottom: 1px solid #fff
-					padding-bottom: 5px
+					border-bottom: 1px solid rgba(91,103,123,0.6)
+					padding-bottom: 8px
 
 				#likes
 					span 
 						+standard()
-						color: $pink
 					+pink-text(30px)
+
+					i 
+						color: $light-blue
+
+					.active
+						color: $orange
+
 
 			#desc
 				width: 100%
