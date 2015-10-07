@@ -165,7 +165,10 @@
           .feed .item-wrapper .text-item #text-item-header #likes span {
             font-family: "Lato";
             font-weight: 300;
-            font-size: 16px;
+            font-size: 16px; }
+          .feed .item-wrapper .text-item #text-item-header #likes i {
+            color: #5b677b; }
+          .feed .item-wrapper .text-item #text-item-header #likes .active {
             color: #DF6F1A; }
       .feed .item-wrapper .text-item #desc {
         width: 100%;
@@ -335,7 +338,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5); }
+      background: rgba(0, 0, 0, 0.3); }
   .settings-wrapper span {
     width: 1px;
     height: 50%;
