@@ -358,7 +358,7 @@
   justify-content: flex-end; }
   .settings-wrapper .info-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     font-family: "Lato";
