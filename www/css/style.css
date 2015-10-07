@@ -27,8 +27,21 @@
     align-items: center;
     font-size: 30px;
     color: #5b677b; }
-  .menubar .active {
-    color: #f55384; }
+    .menubar .tab span {
+      width: 30px;
+      height: 30px;
+      background-color: #5b677b;
+      -webkit-mask-repeat: no-repeat; }
+    .menubar .tab .feed-icon {
+      -webkit-mask-image: url(../../../img/icons/feed.svg); }
+    .menubar .tab .search-icon {
+      -webkit-mask-image: url(../../../img/icons/search.svg); }
+    .menubar .tab .favorites-icon {
+      -webkit-mask-image: url(../../../img/icons/favorites.svg); }
+    .menubar .tab .settings-icon {
+      -webkit-mask-image: url(../../../img/icons/settings.svg); }
+    .menubar .tab .active {
+      background-color: #f55384; }
 
 .topbar {
   width: 100%;
@@ -108,7 +121,7 @@
       overflow: hidden; }
       .feed .item-wrapper .image-item img {
         width: 100%;
-        height: auto; }
+        height: 100%; }
     .feed .item-wrapper .text-item {
       display: block;
       position: relative;
@@ -142,8 +155,8 @@
           font-size: 20px;
           text-transform: uppercase;
           text-transform: capitalize;
-          border-bottom: 1px solid #fff;
-          padding-bottom: 5px; }
+          border-bottom: 1px solid rgba(91, 103, 123, 0.6);
+          padding-bottom: 8px; }
         .feed .item-wrapper .text-item #text-item-header #likes {
           font-family: "Lato";
           font-weight: 300;
@@ -263,27 +276,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 30%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.7);
-  transition: all(700ms) ease-in-out; }
+  transition: all(700ms) ease-in-out;
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.3); }
 
 .delete-tab-close {
   background: radial-gradient(at left center, #248ab9, #403f90);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 30%;
   height: 100%;
   position: absolute;
   top: 0;
   right: -45%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.7);
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all(700ms) ease-in-out; }
 
 .settings-wrapper {
