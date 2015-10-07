@@ -12,8 +12,10 @@
 			<div id="text-item-header">
 
 				<div id="title">{{item.title}}</div>
-				<div id="likes" ng-click="likePost($index)"><span>{{item.likes}}</span>
-					<i class="fa fa-heart-o"></i> <!-- add active class -->
+				
+				<div id="likes" ng-click="likePost($index)">
+					<span ng-if="item.likes">{{item.likes}}</span>
+					<i class="fa fa-heart-o" ng-class=" (feed[$index].likes > 0) ? 'active' : ''"></i> 
 				</div>
 
 			</div>
@@ -29,6 +31,18 @@
 		</div>
 	</div>
 
-</div>
+	<div class="thumb-wrapper">
+		<div class="week">
+			<p>vecka 48</p>
+			<span></span>
+		</div>
 
+
+		<div class="date-feed">
+			
+			<div ng-repeat="item in feed" class="img-thumb"><img ng-src="{{item.img}}"></div>
+
+		</div>
+	</div>
+</div>
 <navmenu></navmenu>

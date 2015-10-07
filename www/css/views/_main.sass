@@ -3,6 +3,8 @@
 	overflow: auto
 	height: calc( 100% - 130px)
 	overflow-x: hidden
+	
+	
 
 
 	.item-wrapper
@@ -12,6 +14,8 @@
 		align-items: center
 		flex-direction: column
 		margin-bottom: 20px
+		display: none
+
 
 		.image-item
 			width: 100%
@@ -56,7 +60,7 @@
 				#likes
 					span 
 						+standard()
-					+pink-text(30px)
+					+orange-text(30px)
 
 					i 
 						color: $light-blue
@@ -73,5 +77,46 @@
 			#text-item-footer
 				width: 100%
 				height: 25%
-				+pink-text(18px)
+				+orange-text(18px)
 				+flex(space-between)
+
+	.thumb-wrapper
+		+flex(center)
+		flex-direction: column
+
+		.week
+			width: 98%
+			+orange-text(12px)
+			text-transform: capitalize
+			display: flex 
+			flex-direction: column
+			align-items: flex-start
+			padding: 5px
+			
+
+			span 
+				width: 100%
+				height: 1px
+				background: $orange
+				margin-top: 5px
+
+
+		.date-feed
+			width: 98%
+			margin: 10px auto
+			display: flex 
+			justify-content: space-around
+			flex-wrap: wrap
+			
+
+			.img-thumb
+				width: 32%
+				height: 150px
+				border: 1px solid rgba(0,0,0,0.5)
+				box-sizing: border-box
+				margin-bottom: 2%
+
+				img 
+					width: 100%
+					height: 100%
+

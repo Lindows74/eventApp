@@ -10,7 +10,7 @@
 
 	<div class="search-wrapper">
 		<img src="img/icons/search.svg">
-		<input ng-model="searchToken" type="text" placeholder="Sök event...">
+		<input ng-model="searchToken" type="text" placeholder="Sök event..." ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
 	</div>
 	<div class="feed">
 		<ul>

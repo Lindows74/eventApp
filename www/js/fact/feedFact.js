@@ -15,7 +15,7 @@ app.factory('feedFact', function() {
                         "title": "Höstmarknad",
                         "img": "https://s-media-cache-ak0.pinimg.com/236x/64/e5/27/64e527acffa8c17963dcc555cc0de90c.jpg",
                         "description": "Höstmarknad på torget framför Willy´s från den 29/9 till 1/10. kom och se artister och handla närproducerade produkter.",
-                        "likes": 89,
+                        "likes": 0,
                         "company": "Karlshamns Kommun",
                         "date": "20-10-2015"
                     },
@@ -34,6 +34,54 @@ app.factory('feedFact', function() {
                         "likes": 268,
                         "company": "&Vin",
                         "date": "10-11-2015"
+                    },
+                    {
+                        "title": "Musikkväll i Kyrkan",
+                        "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "likes": 61,
+                        "company": "Carl Gustafs Kyrkan",
+                        "date": "6-6-2016"
+                    },
+                    {
+                        "title": "Musikkväll i Kyrkan",
+                        "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "likes": 61,
+                        "company": "Carl Gustafs Kyrkan",
+                        "date": "6-6-2016"
+                    },
+                    {
+                        "title": "Musikkväll i Kyrkan",
+                        "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "likes": 61,
+                        "company": "Carl Gustafs Kyrkan",
+                        "date": "6-6-2016"
+                    },
+                    {
+                        "title": "Musikkväll i Kyrkan",
+                        "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "likes": 61,
+                        "company": "Carl Gustafs Kyrkan",
+                        "date": "6-6-2016"
+                    },
+                    {
+                        "title": "Musikkväll i Kyrkan",
+                        "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "likes": 61,
+                        "company": "Carl Gustafs Kyrkan",
+                        "date": "6-6-2016"
+                    },
+                    {
+                        "title": "Musikkväll i Kyrkan",
+                        "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "likes": 61,
+                        "company": "Carl Gustafs Kyrkan",
+                        "date": "6-6-2016"
                     },
                     {
                         "title": "Musikkväll i Kyrkan",
