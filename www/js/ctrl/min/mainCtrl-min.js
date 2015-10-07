@@ -1,0 +1,1 @@
+app.controller("mainCtrl",["$scope","feedFact",function(e,t){e.title="Main view",e.page="home",e.feed=t.getFeed(),console.log(t.getFeed()),e.likePost=function(e){t.setLikes(e)}}]);
