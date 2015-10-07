@@ -1,37 +1,37 @@
 <topbar></topbar>
 
-
 <div class="settings-wrapper">
 
-	
-	
-	<div class="avatar">
-		<img src="img/avatar.png">   <!-- Gör dynamisk -->
-		<div class="avatar-overlay"></div>
+	<div class="info-box">
+
+		<div class="avatar">
+			<img src="img/avatar.png">   <!-- Gör dynamisk -->
+			<div class="avatar-overlay"></div>
+		</div>
+
+		<div class="left-box">
+			<ul>
+				<li>stad</li>
+				<li>platstjänster</li>
+				<li>gillade events</li>
+			</ul>
+		</div>
+		<span></span>
+		<div class="right-box">
+			<ul>
+				<li>{{ location }}</li>
+				<li><div class="slideThree">  
+				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
+				    <label for="slideThree"></label>
+				    </div>
+				</li>
+				<li>5</li> <!-- Gör dynamisk -->
+			</ul>
+		</div>
+		
 	</div>
 
-	<div class="left-box">
-		<ul>
-			<li>stad</li>
-			<li>platstjänster</li>
-			<li>gillade events</li>
-		</ul>
-	</div>
-	<span></span>
-	<div class="right-box">
-		<ul>
-			<li>{{ location }}</li>
-			<li><div class="slideThree">  
-			    <input type="checkbox" value="None" id="slideThree" name="check" checked />
-			    <label for="slideThree"></label>
-			    </div>
-			</li>
-			<li>5</li> <!-- Gör dynamisk -->
-		</ul>
-	</div>
+	<div class="sign-out">Logga ut</div>
 	
 </div>
-
-<div class="sign-out">Logga ut</div>
-
 <navmenu></navmenu>
