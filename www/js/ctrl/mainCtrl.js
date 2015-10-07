@@ -9,7 +9,7 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
     console.log(feedFact.getFeed());
     
     $scope.likePost =  function($index){
-        feedFact.setLikes($scope.feed[$index]);
+        feedFact.setLikes($index);
     }
 
 }]);
