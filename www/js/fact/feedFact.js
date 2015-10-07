@@ -1,4 +1,7 @@
 app.factory('feedFact', function() {
+    
+    var likes = [];
+    
     return {
         getFeed: function() {
             return [
@@ -43,6 +46,15 @@ app.factory('feedFact', function() {
                         "date": "6-6-2016"
                     }
                    ];
+        },
+        getLikes: function(){
+            return likes;
+        },
+        setLikes: function(obj){
+            if(likes.indexOf(obj) == -1) likes.push(obj);
+        },
+        removeLikes: function(index){
+            likes.splice(index, 1); 
         }
     };
 });
