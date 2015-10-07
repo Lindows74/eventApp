@@ -2,9 +2,7 @@ app.factory('feedFact', function() {
     
     var likes = [];
     
-    return {
-        getFeed: function() {
-            return [
+    var feed = [
                     {
                         "title": "Hårmässa",
                         "img": "https://c1.staticflickr.com/9/8300/7997573453_81c3081276_b.jpg",
@@ -46,14 +44,20 @@ app.factory('feedFact', function() {
                         "date": "6-6-2016"
                     }
                    ];
+    
+    return {
+        getFeed: function() {
+            return feed;
         },
         getLikes: function(){
             return likes;
         },
-        setLikes: function(obj){
-            if(likes.indexOf(obj) == -1) likes.push(obj);
+        setLikes: function(index){
+            feed[index].likes = feed[index].likes + 1; 
+            if(likes.indexOf(feed[index]) == -1) likes.push(feed[index]);
         },
         removeLikes: function(index){
+            feed[index].likes = feed[index].likes - 1; 
             likes.splice(index, 1); 
         }
     };
