@@ -9,33 +9,17 @@
 
 <div class="search-wrapper">
 	<i class="fa fa-search"></i>
-	<input type="text" placeholder="Sök event...">
+	<input ng-model="searchToken" type="text" placeholder="Sök event...">
 </div>
 <div class="feed">
 	<ul>
-		<li>
+		<li ng-repeat="item in feed | filter:searchToken">
 			<span></span>
 			<div class="search-desc-wrapper">
-				<div class="search-title">title</div>
-				<div class="search-desc">company - karlshamn</div>
+				<div class="search-title">{{ item.title }}</div>
+				<div class="search-desc">{{ item.company }}</div>
 			</div>
-			<div class="search-desc-date">1/10/2015</div>
-		</li>
-		<li>
-			<span></span>
-			<div class="search-desc-wrapper">
-				<div class="search-title">title</div>
-				<div class="search-desc">company - karlshamn</div>
-			</div>
-			<div class="search-desc-date">1/10/2015</div>
-		</li>
-		<li>
-			<span></span>
-			<div class="search-desc-wrapper">
-				<div class="search-title">title</div>
-				<div class="search-desc">company - karlshamn</div>
-			</div>
-			<div class="search-desc-date">1/10/2015</div>
+			<div class="search-desc-date">{{ item.date }}</div>
 		</li>
 	</ul>
 </div>

@@ -33,13 +33,13 @@
       background-color: #5b677b;
       -webkit-mask-repeat: no-repeat; }
     .menubar .tab .feed-icon {
-      -webkit-mask-image: url(../../../img/icons/feed.svg); }
+      -webkit-mask-image: url(../img/icons/feed.svg); }
     .menubar .tab .search-icon {
-      -webkit-mask-image: url(../../../img/icons/search.svg); }
+      -webkit-mask-image: url(../img/icons/search.svg); }
     .menubar .tab .favorites-icon {
-      -webkit-mask-image: url(../../../img/icons/favorites.svg); }
+      -webkit-mask-image: url(../img/icons/favorites.svg); }
     .menubar .tab .settings-icon {
-      -webkit-mask-image: url(../../../img/icons/settings.svg); }
+      -webkit-mask-image: url(../img/icons/settings.svg); }
     .menubar .tab .active {
       background-color: #f55384; }
 

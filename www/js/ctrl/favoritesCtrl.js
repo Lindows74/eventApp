@@ -1,25 +1,12 @@
-app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
+app.controller('favoritesCtrl', ['$scope' , 'feedFact', function ($scope, feedFact) {
  
     $scope.title = "Favorites view";
-
+        
+    console.log(feedFact.getLikes());
 
     $scope.page = "favorites";
     
-    $scope.favorites = [
-        {
-            "title": "Sveriges största Cirkus",
-            "company": "Cirkus Cirkör",
-            "date": "5-9-2015",
-            "delmenu": false
-        },
-        {
-            "title": "ElektroFestival 2.0",
-            "company": "&Vin",
-            "date": "10-11-2015",
-            "delmenu": false
-        },
-
-    ];
+    $scope.favorites = setDelMenu(feedFact.getLikes());
     
     $scope.delMenu = function($index, eventType){
         console.log($index, eventType);
@@ -36,7 +23,15 @@ app.controller('favoritesCtrl', ['$scope' ,function ($scope) {
     }
     
     $scope.delItem = function($index){
-        $scope.favorites.splice($index, 1);    
+        if(confirm("Är du säker på att du vill ta bort " + $scope.favorites[$index].title + "?")){
+            feedFact.removeLikes($index);
+        }   
+    }
+    
+    function setDelMenu(obj){
+        var obj = obj
+        for(key in obj) obj[key].delmenu = false;
+        return obj;
     }
 
 }]);
