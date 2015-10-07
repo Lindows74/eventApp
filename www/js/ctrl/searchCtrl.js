@@ -9,6 +9,7 @@ app.controller('searchCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) 
     $scope.page = "search";
     
     
+    //TODO Fix THIS test with phonegap app!
     $scope.menuAction = function(action){
         switch(action){
             case "show":
