@@ -2,7 +2,7 @@
 
 <div class="feed">
 	
-	<div class="item-wrapper" ng-repeat="item in feed">
+	<div ng-hide="thumb" class="item-wrapper" ng-repeat="item in feed">
 		<div class="image-item">
 			<img ng-src="{{item.img}}" on-double-tap="likePost($index)">
 
@@ -31,7 +31,7 @@
 		</div>
 	</div>
 
-	<div class="thumb-wrapper">
+	<div ng-show="thumb" class="thumb-wrapper">
 		<div class="week">
 			<p>vecka 48</p>
 			<span></span>
@@ -45,4 +45,5 @@
 		</div>
 	</div>
 </div>
+
 <navmenu></navmenu>
