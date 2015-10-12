@@ -4,6 +4,8 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
     
     $scope.page = "home";
     
+    $scope.thumb = false;
+    
     $scope.feed = feedFact.getFeed();
 
     
@@ -13,6 +15,8 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
         feedFact.setLikes($index);
     }
 
-
+    $scope.changeFeed = function(){
+        $scope.thumb  = !$scope.thumb;
+    }
 
 }]);
