@@ -423,6 +423,10 @@
         font-size: 14px;
         text-transform: uppercase;
         color: white; }
+        .settings-wrapper .info-box-logged-in .right-box select:after {
+          content: "";
+          background: white;
+          color: white; }
     .settings-wrapper .info-box-logged-in span {
       width: 1px;
       height: 50%;
