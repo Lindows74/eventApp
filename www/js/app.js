@@ -46,6 +46,11 @@ var app = angular.module('starter', ['ionic'])
     url: '/company/:name',
     templateUrl: 'views/company.html',
     controller: 'companyCtrl'
+  })
+  .state('feeditem', {
+    url: '/feeditem',
+    templateUrl: 'views/feeditem.html',
+    controller: 'feeditemCtrl'
   });
 
   $urlRouterProvider.otherwise('/');
