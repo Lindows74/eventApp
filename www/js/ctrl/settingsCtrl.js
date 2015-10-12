@@ -1,9 +1,16 @@
-app.controller('settingsCtrl', ['$scope', '$http', 'cities', function ($scope, $http, cities) {
+app.controller('settingsCtrl', ['$scope', '$http', 'cities', 'geo', function ($scope, $http, cities, geo) {
  
     $scope.title = "Settings view";
-    $scope.location = "Karlshamn";
+    
+    geo.getLocation().then(function(data){
+        $scope.location = data;    
+    });
+    
+    $scope.cities = cities;
+    
+    
     $scope.page = "settings";
-    console.log(cities);
+    console.log($scope.cities);
     
     $scope.init = function () {
         var substringMatcher = function(strs) {

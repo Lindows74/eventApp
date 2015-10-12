@@ -20,7 +20,9 @@
 		<div class="right-box">
 			<ul>
 				<li> 
-					<input class="typeahead" ng-model="location">
+					<select>
+						<option ng-repeat="city in cities"> {{ city }}</option>
+					</select>
 				</li>
 				<li><div class="slideThree">  
 				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
