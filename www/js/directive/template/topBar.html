@@ -1,3 +1,6 @@
 <div class="topbar">
 	<p>Happnings</p><p style="font-size: 14px"> {{ location }}</p>
+	<div ng-show="page == 'home'"  ng-click="changeFeed()" class="thumb-icon"> <!-- Fixa så .item-wrapper = display: none och .thumb-wrapper = display: block -->
+		<i class="fa fa-clone"></i>
+	</div>
 </div>

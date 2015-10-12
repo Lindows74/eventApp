@@ -2,7 +2,7 @@
 
 <div class="feed">
 	
-	<div class="item-wrapper" ng-repeat="item in feed">
+	<div ng-hide="thumb" class="item-wrapper" ng-repeat="item in feed">
 		<div class="image-item">
 			<img ng-src="{{item.img}}" on-double-tap="likePost($index)">
 
@@ -15,7 +15,7 @@
 				
 				<div id="likes" ng-click="likePost($index)">
 					<span ng-if="item.likes">{{item.likes}}</span>
-					<i class="fa fa-heart-o" ng-class=" (feed[$index].likes > 0) ? 'active' : ''"></i> <!-- add active class -->
+					<i class="fa fa-heart-o" ng-class=" (feed[$index].likes > 0) ? 'active' : ''"></i> 
 				</div>
 
 			</div>
@@ -31,6 +31,19 @@
 		</div>
 	</div>
 
+	<div ng-show="thumb" class="thumb-wrapper">
+		<div class="week">
+			<p>vecka 48</p>
+			<span></span>
+		</div>
+
+
+		<div class="thumb-feed">
+			
+			<div ng-repeat="item in feed" class="img-thumb"><img ng-src="{{item.img}}"></div>
+
+		</div>
+	</div>
 </div>
 
 <navmenu></navmenu>
