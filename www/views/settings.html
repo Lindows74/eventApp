@@ -2,7 +2,7 @@
 
 <div class="settings-wrapper">
 
-	<div class="info-box">
+	<div class="info-box-logged-in"> <!-- inloggad -->
 
 		<div class="avatar">
 			<img src="img/avatar.png">   <!-- Gör dynamisk -->
@@ -19,12 +19,18 @@
 		<span></span>
 		<div class="right-box">
 			<ul>
+<<<<<<< HEAD
 				<li> 
 					<select style="width:50%;" value="karlshamn">
 						<option ng-repeat="city in cities" value="{{city}}">{{city}}</option>
 					</select> 
 				</li>
 				<li><div class="slideThree">  
+=======
+				<li>{{ location }}</li>
+				<li>
+					<div class="slideThree">  
+>>>>>>> design
 				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
 				    <label for="slideThree"></label>
 				    </div>
@@ -35,7 +41,35 @@
 		
 	</div>
 
-	<div class="sign-out">Logga ut</div>
+	<div class="sign-out">Logga ut</div> <!-- Inloggad display: flex -->
+
+
+
+<!-- utloggad -->
+	<div class="info-box-logged-out"> 
+
+		<div class="left-box">
+			<ul>
+				<li>stad</li>
+				<li>platstjänster</li>
+			</ul>
+		</div>
+		<span></span>
+		<div class="right-box">
+			<ul>
+				<li>{{ location }}</li>
+				<li>
+					<div class="slideThree">  
+				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
+				    <label for="slideThree"></label>
+				    </div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
 	
+	<div class="fb-btn">Logga in med facebook</div> <!-- inloggad display: none -->
+
 </div>
 <navmenu></navmenu>
