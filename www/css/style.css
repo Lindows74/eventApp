@@ -422,11 +422,10 @@
         font-size: 16px;
         font-size: 14px;
         text-transform: uppercase;
-        color: white; }
-        .settings-wrapper .info-box-logged-in .right-box select:after {
-          content: "";
-          background: white;
-          color: white; }
+        color: white;
+        -webkit-appearance: none; }
+      .settings-wrapper .info-box-logged-in .right-box i {
+        font-size: 16px; }
     .settings-wrapper .info-box-logged-in span {
       width: 1px;
       height: 50%;
