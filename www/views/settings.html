@@ -1,5 +1,5 @@
 <topbar></topbar>
-
+<div ng-init="init()"></div>
 <div class="settings-wrapper">
 
 	<div class="info-box">
@@ -20,9 +20,7 @@
 		<div class="right-box">
 			<ul>
 				<li> 
-					<select style="width:50%;" value="karlshamn">
-						<option ng-repeat="city in cities" value="{{city}}">{{city}}</option>
-					</select> 
+					<input class="typeahead" ng-model="location">
 				</li>
 				<li><div class="slideThree">  
 				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
