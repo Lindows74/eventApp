@@ -1,5 +1,5 @@
 <topbar></topbar>
-
+<div ng-init="init()"></div>
 <div class="settings-wrapper">
 
 	<div class="info-box-logged-in"> <!-- inloggad -->
@@ -19,9 +19,14 @@
 		<span></span>
 		<div class="right-box">
 			<ul>
-				<li>{{ location }}</li>
+				<li> 
+					<select>
+						<option ng-repeat="city in cities"> {{ city }}</option>
+					</select>
+				</li>
 				<li>
 					<div class="slideThree">  
+
 				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
 				    <label for="slideThree"></label>
 				    </div>
