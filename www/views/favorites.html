@@ -2,7 +2,7 @@
 
 <div class="feed">
 
-	<div class="bg-placeholder"><p>Du har inga gillade events</p></div>
+	<div ng-hide="favorites.length > 0" class="bg-placeholder"><p>Du har inga gillade events</p></div>
 
 <ul>
 	<li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')">
