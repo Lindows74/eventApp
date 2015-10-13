@@ -12,6 +12,8 @@ var app = angular.module('starter', ['ionic'])
 })
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider) {
   
+  $ionicConfigProvider.views.transition('fade-in');
+  
   $stateProvider
   .state('home', {
     url: '/',
@@ -46,6 +48,11 @@ var app = angular.module('starter', ['ionic'])
     url: '/company/:name',
     templateUrl: 'views/company.html',
     controller: 'companyCtrl'
+  })
+  .state('feeditem', {
+    url: '/feeditem',
+    templateUrl: 'views/feeditem.html',
+    controller: 'feeditemCtrl'
   });
 
   $urlRouterProvider.otherwise('/');
