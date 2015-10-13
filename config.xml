@@ -20,5 +20,6 @@
   </feature>
   
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-   <icon src="img/logo.png" />
+  
+  <icon src="img/logo.png" />
 </widget>
