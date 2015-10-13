@@ -20,9 +20,6 @@
   </feature>
   
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-<<<<<<< HEAD
+
   <icon src="img/happningLogo.png" />
-=======
-   <icon src="img/happningLogo.png" />
->>>>>>> design
 </widget>
