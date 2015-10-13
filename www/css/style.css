@@ -319,6 +319,22 @@
       font-size: 16px;
       font-size: 12px; }
 
+.bg-placeholder {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgba(91, 103, 123, 0.6);
+  line-height: 1.2;
+  font-size: 30px; }
+
 .delete-tab-open {
   background: radial-gradient(at left center, #248ab9, #403f90);
   display: flex;
@@ -355,7 +371,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
-  .settings-wrapper .info-box {
+  .settings-wrapper .info-box-logged-in {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -366,12 +382,12 @@
     color: white;
     font-size: 14px;
     width: 95%;
-    height: 40%;
+    height: 50%;
     padding: 0 20px;
     margin: 0 auto;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     border-top: 2px solid rgba(91, 103, 123, 0.4); }
-    .settings-wrapper .info-box .avatar {
+    .settings-wrapper .info-box-logged-in .avatar {
       position: absolute;
       top: -150px;
       left: calc(50% - 100px);
@@ -380,39 +396,51 @@
       border-radius: 50%;
       box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
       overflow: hidden; }
-      .settings-wrapper .info-box .avatar img {
+      .settings-wrapper .info-box-logged-in .avatar img {
         max-width: 100%;
         height: auto; }
-      .settings-wrapper .info-box .avatar .avatar-overlay {
+      .settings-wrapper .info-box-logged-in .avatar .avatar-overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.3); }
-    .settings-wrapper .info-box .left-box {
+    .settings-wrapper .info-box-logged-in .left-box {
       width: 45%;
       text-align: right;
       margin-top: 10%; }
-    .settings-wrapper .info-box .right-box {
+    .settings-wrapper .info-box-logged-in .right-box {
       width: 45%;
       text-align: left;
       margin-top: 10%; }
-    .settings-wrapper .info-box span {
+      .settings-wrapper .info-box-logged-in .right-box select {
+        background: transparent;
+        border: none;
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 16px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+        -webkit-appearance: none; }
+      .settings-wrapper .info-box-logged-in .right-box i {
+        font-size: 16px; }
+    .settings-wrapper .info-box-logged-in span {
       width: 1px;
       height: 50%;
       background: rgba(91, 103, 123, 0.4);
       margin-top: 10%; }
-    .settings-wrapper .info-box ul li {
+    .settings-wrapper .info-box-logged-in ul li {
       margin: 20px 0;
       text-transform: uppercase; }
     @media (max-height: 570px) {
-      .settings-wrapper .info-box .avatar {
+      .settings-wrapper .info-box-logged-in .avatar {
         width: 150px;
         height: 150px;
         top: -120px;
         left: calc(50% - 75px); }
-      .settings-wrapper .info-box ul li {
+      .settings-wrapper .info-box-logged-in ul li {
         margin: 10px;
         font-size: 12px; } }
   .settings-wrapper .sign-out {
@@ -428,6 +456,50 @@
     font-size: 24px;
     letter-spacing: 5px;
     color: white; }
+  .settings-wrapper .info-box-logged-out {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    font-size: 14px;
+    width: 95%;
+    height: 84%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(91, 103, 123, 0.4);
+    display: none; }
+    .settings-wrapper .info-box-logged-out .left-box {
+      width: 45%;
+      text-align: right; }
+    .settings-wrapper .info-box-logged-out .right-box {
+      width: 45%;
+      text-align: left; }
+    .settings-wrapper .info-box-logged-out span {
+      width: 1px;
+      height: 15%;
+      background: rgba(91, 103, 123, 0.4);
+      margin-top: 5%; }
+    .settings-wrapper .info-box-logged-out ul li {
+      margin: 20px 0;
+      text-transform: uppercase; }
+  .settings-wrapper .fb-btn {
+    width: 100%;
+    height: 13%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    background: #3C5B98;
+    font-size: 24px;
+    color: white;
+    display: none; }
 
 p {
   margin: 0; }
