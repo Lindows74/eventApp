@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.eventapp425506" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Happnings</name>
-    <description>
+  <name>Happnings</name>
+  <description>
         Lists local events nearby
     </description>
-    <author>
+  <author>
        Filip Ramstedt, Oskar Stålstierna, Nisse Löfgren
     </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
-  <preference name="orientation" value="portrait" />
+  <preference name="orientation" value="portrait"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
+  <preference name="SplashScreen" value="splash"/>
+  <preference name="SplashScreenDelay" value="30000"/>
+  <preference name="SplashMaintainAspectRatio" value="true"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
-  
-  <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-
-  <icon src="img/happningLogo.png" />
-  <gap:splash src="img/splashscreen.png" />
-  <preference name="SplashScreen" value="splash" />
-  <preference name="SplashScreenDelay" value="30000" />
-  <preference name="SplashMaintainAspectRatio" value="true" />
+  <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10"/>
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4"/>
+  <icon src="img/happningLogo.png"/>
+  <platform name="android">
+    <splash src="resources/android/splash/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="resources/android/splash/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="resources/android/splash/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+  </platform>
 </widget>
