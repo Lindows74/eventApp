@@ -20,6 +20,7 @@
 		<div class="right-box">
 			<ul>
 				<li> 
+<<<<<<< HEAD
 					<select ng-if="locationServices">
 							<option value="{{ location }}"> {{ location }}</option>
 					</select>
@@ -30,6 +31,16 @@
 				<li><div class="slideThree">  
 				    <input ng-if="locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check" checked/>
 					<input ng-if="!locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check"/>
+=======
+					<select>
+						<option ng-repeat="city in cities"> {{ city }}</option>
+					</select><i class="fa fa-caret-down"></i>
+				</li>
+				<li>
+					<div class="slideThree">  
+
+				    <input type="checkbox" value="None" id="slideThree" name="check" />
+>>>>>>> design
 				    <label for="slideThree"></label>
 				    </div>
 				</li>
@@ -39,8 +50,13 @@
 		
 	</div>
 
+<<<<<<< HEAD
 
 	<div class="sign-out" ng-click="signOut()">Logga ut</div>
+=======
+	<div class="sign-out">Logga ut</div> <!-- Inloggad display: flex -->
+
+>>>>>>> design
 
 
 <!-- utloggad -->
