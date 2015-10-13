@@ -1,42 +1,26 @@
-app.controller('settingsCtrl', ['$scope', '$http', 'cities', 'geo', function ($scope, $http, cities, geo) {
+app.controller('settingsCtrl', ['$scope', '$http', 'cities', 'geo', 'feedFact',function ($scope, $http, cities, geo, feedFact) {
  
     $scope.title = "Settings view";
+    
+    $scope.locationServices = true;
     
     geo.getLocation().then(function(data){
         $scope.location = data;    
     });
     
+    $scope.likes = feedFact.getLikes().length;
+    
     $scope.cities = cities;
     
     
-    $scope.page = "settings";
-    console.log($scope.cities);
+    $scope.page = "settings"; 
+    $scope.setLocationService = function(){
+        $scope.locationServices = !$scope.locationServices;
+        console.log($scope.locationServices);
+    }
     
-    $scope.init = function () {
-        var substringMatcher = function(strs) {
-            return function findMatches(q, cb) {
-                var matches, substringRegex;
-                matches = [];
-                substrRegex = new RegExp(q, 'i');
-            
-                $.each(strs, function(i, str) {
-                if (substrRegex.test(str)) {
-                    matches.push(str);
-                }
-                });
-            
-                cb(matches);
-            };
-        };
-        
-        $('.typeahead').typeahead({
-            hint: true,
-            highlight: true,
-            minLength: 1
-        },
-        {
-            name: 'states',
-            source: substringMatcher(cities)
-        });
-    }   
+     $scope.signOut = function(){
+        alert("logg out? you havent even logged in?!?!?!");
+    }  
+    
 }]);

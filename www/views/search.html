@@ -1,18 +1,11 @@
 <topbar></topbar>
 
 <div class="feed">
-	<div class="date-search-wrapper">
-		<div class="date-btn date-active">idag</div>
-		<div class="date-btn">3 dagar</div>
-		<div class="date-btn">1 vecka</div>
-		<div class="date-btn">1 månad</div>
-	</div>
 
 	<div class="search-wrapper">
 		<img src="img/icons/search.svg">
 		<input ng-model="searchToken" type="text" placeholder="Sök event..." ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
 	</div>
-	<div class="feed">
 		<ul>
 			<li ng-repeat="item in feed | filter:searchToken">
 				<span></span>
@@ -23,7 +16,7 @@
 				<div class="search-desc-date">{{ item.date }}</div>
 			</li>
 		</ul>
-	</div>
+
 </div>
 
 <navmenu></navmenu>
