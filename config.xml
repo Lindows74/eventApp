@@ -26,4 +26,5 @@
   <gap:splash src="img/splashscreen.png" />
   <preference name="SplashScreen" value="splash" />
   <preference name="SplashScreenDelay" value="30000" />
+  <preference name="SplashMaintainAspectRatio" value="true" />
 </widget>
