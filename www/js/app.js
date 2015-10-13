@@ -11,9 +11,7 @@ var app = angular.module('starter', ['ionic'])
   });
 })
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider) {
-  $httpProvider.defaults.useXDomain = true;
-  $httpProvider.defaults.withCredentials = true;
-  delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  
   $ionicConfigProvider.views.transition('fade-in');
   
   $stateProvider
@@ -35,12 +33,26 @@ var app = angular.module('starter', ['ionic'])
   .state('settings', {
     url: '/settings',
     templateUrl: 'views/settings.html',
-    controller: 'settingsCtrl'
+    controller: 'settingsCtrl',
+    resolve:{
+      cities: function($http, $q){
+        var deferred = $q.defer();
+        $http.get("js/cities.json").then(function(data){
+            deferred.resolve(data.data);
+        });
+        return deferred.promise;
+      }
+    }
   })
   .state('company', {
     url: '/company/:name',
     templateUrl: 'views/company.html',
     controller: 'companyCtrl'
+  })
+  .state('feeditem', {
+    url: '/feeditem',
+    templateUrl: 'views/feeditem.html',
+    controller: 'feeditemCtrl'
   });
 
   $urlRouterProvider.otherwise('/');

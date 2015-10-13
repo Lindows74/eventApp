@@ -11,7 +11,7 @@
 
 			<div id="text-item-header">
 
-				<div id="title">{{item.title}}</div>
+				<div id="title">{{item.title| limitTo: 25 }}{{item.title.length>25 ?"...": ""}}</div>
 				
 				<div id="likes" ng-click="likePost($index)">
 					<span ng-if="item.likes">{{item.likes}}</span>
@@ -25,7 +25,6 @@
 				<div id="date">{{item.date}}</div>
 				<div id="place-desc">{{item.company}}</div>
 
-
 			</div>
 
 		</div>
@@ -36,7 +35,6 @@
 			<p>vecka 48</p>
 			<span></span>
 		</div>
-
 
 		<div class="thumb-feed">
 			

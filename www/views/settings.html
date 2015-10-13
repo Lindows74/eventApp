@@ -1,11 +1,11 @@
 <topbar></topbar>
-
+<div ng-init="init()"></div>
 <div class="settings-wrapper">
 
-	<div class="info-box">
+	<div class="info-box-logged-in"> <!-- inloggad -->
 
 		<div class="avatar">
-			<img src="img/avatar.png">   <!-- Gör dynamisk -->
+			<img src="img/avatar.png">   <!-- Gör dynamistk -->
 			<div class="avatar-overlay"></div>
 		</div>
 
@@ -20,22 +20,53 @@
 		<div class="right-box">
 			<ul>
 				<li> 
-					<select style="width:50%;" value="karlshamn">
-						<option ng-repeat="city in cities" value="{{city}}">{{city}}</option>
-					</select> 
+					<select ng-if="locationServices">
+							<option value="{{ location }}"> {{ location }}</option>
+					</select>
+					<select ng-if="!locationServices">
+							<option ng-repeat="city in cities" value="{{ city }}"> {{ city }}</option>
+					</select><i class="fa fa-caret-down"></i>
 				</li>
 				<li><div class="slideThree">  
-				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
+				    <input ng-if="locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check" checked/>
+					<input ng-if="!locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check"/>
 				    <label for="slideThree"></label>
 				    </div>
 				</li>
-				<li>5</li> <!-- Gör dynamisk -->
+				<li>{{ likes }}</li>
 			</ul>
 		</div>
 		
 	</div>
 
-	<div class="sign-out">Logga ut</div>
+
+	<div class="sign-out" ng-click="signOut()">Logga ut</div>
+
+<!-- utloggad -->
+	<div class="info-box-logged-out"> 
+
+		<div class="left-box">
+			<ul>
+				<li>stad</li>
+				<li>platstjänster</li>
+			</ul>
+		</div>
+		<span></span>
+		<div class="right-box">
+			<ul>
+				<li>{{ location }}</li>
+				<li>
+					<div class="slideThree">  
+				    <input type="checkbox" value="None" id="slideThree" name="check" checked />
+				    <label for="slideThree"></label>
+				    </div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
 	
+	<div class="fb-btn">Logga in med facebook</div> <!-- inloggad display: none -->
+
 </div>
 <navmenu></navmenu>

@@ -10,6 +10,7 @@
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
+  <preference name="orientation" value="portrait" />
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
@@ -17,5 +18,12 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
-   <icon src="img/logo.png" />
+  
+  <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+
+  <icon src="img/happningLogo.png" />
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="SplashScreen" value="img/splashscreen.png" />
+  <preference name="SplashScreenDelay" value="30000" />
 </widget>
