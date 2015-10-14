@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
-		id        = ""
+		id        = "se.weio.www"
 		versionCode=""
 		version   = "">
 		<name>Happnings</name>
 		<description> Lists nerby events </description>
-		<author> Filip Ramstedt, Oskar Stålstierna, Nisse Löfgren</author>
+		<author> Filip Ramstedt, Oskar Stålstierna, Nisse Löfgren </author>
 		<preference name="phonegap-version" value="cli-5.2.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="fullscreen" value="false" />
