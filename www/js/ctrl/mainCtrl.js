@@ -5,6 +5,7 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
     $scope.page = "home";
     
     $scope.thumb = false;
+    $scope.showMenu = true;
     
     $scope.feed = feedFact.getFeed();
 

@@ -50,7 +50,7 @@ var app = angular.module('starter', ['ionic'])
     controller: 'companyCtrl'
   })
   .state('feeditem', {
-    url: '/feeditem',
+    url: '/feeditem/:title',
     templateUrl: 'views/feeditem.html',
     controller: 'feeditemCtrl'
   });

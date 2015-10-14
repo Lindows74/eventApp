@@ -25,7 +25,7 @@ app.factory('feedFact', function() {
                         "description": "En fartfylld och spännande kväll med allt från elefanter till akrobater och clowner.",
                         "likes": 0,
                         "company": "Cirkus Cirkör",
-                        "date": "5-9-2015"
+                        "date": "05-09-2015"
                     },
                     {
                         "title": "ElektroFestival 2.0",
@@ -41,7 +41,7 @@ app.factory('feedFact', function() {
                         "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
                         "likes": 0,
                         "company": "Carl Gustafs Kyrkan",
-                        "date": "6-6-2016"
+                        "date": "06-06-2016"
                     },
                     {
                         "title": "Utebio",
@@ -49,7 +49,7 @@ app.factory('feedFact', function() {
                         "description": "Kvällen bjuder på filmer såsom Pulpfiction och Alien",
                         "likes": 0,
                         "company": "Bio Metropol",
-                        "date": "1-8-2015"
+                        "date": "01-08-2015"
                     },
                     {
                         "title": "Föreläsning, Technovetenskap",
@@ -57,7 +57,7 @@ app.factory('feedFact', function() {
                         "description": "En föreläsning runt för och nackdelarna av ett öppet och fritt internet.",
                         "likes": 0,
                         "company": "Blekinge Tekniska Högskola",
-                        "date": "4-11-2015"
+                        "date": "04-11-2015"
                     },
                     {
                         "title": "Bartömmning",
@@ -65,7 +65,7 @@ app.factory('feedFact', function() {
                         "description": "Månadens sista kväll för våran utebar, kom och fynda.",
                         "likes": 0,
                         "company": "Bonken",
-                        "date": "4-10-2015"
+                        "date": "04-10-2015"
                     },
                     {
                         "title": "Loppmarknad",
@@ -73,7 +73,7 @@ app.factory('feedFact', function() {
                         "description": "Kom och fynda allt som du kan tänka dig! över 200 bord stor loppis!",
                         "likes": 0,
                         "company": "Blekinge Kommun",
-                        "date": "4-11-2015"
+                        "date": "04-11-2015"
                     },
                     {
                         "title": "Ekologisk Skördemarkand",
@@ -81,7 +81,7 @@ app.factory('feedFact', function() {
                         "description": "Här kan du köpa närodlad Ekologisk mat av högsta kvalitet.",
                         "likes": 0,
                         "company": "Torgaktivitet AB",
-                        "date": "4-09-2015"
+                        "date": "04-09-2015"
                     },
                     {
                         "title": "Konstutställning",
@@ -89,7 +89,7 @@ app.factory('feedFact', function() {
                         "description": "Många av traktens konstnärer kommer ställa ut i kommunhuset under hela helgen.",
                         "likes": 0,
                         "company": "Blekinge Kommun",
-                        "date": "4-09-2015"
+                        "date": "04-09-2015"
                     },
                     {
                         "title": "Trubadursittning",
@@ -97,7 +97,7 @@ app.factory('feedFact', function() {
                         "description": "Häng med på en magisk kväll med levande musik och god mat.",
                         "likes": 0,
                         "company": "Tures Resturant",
-                        "date": "4-09-2015"
+                        "date": "04-09-2015"
                     }
                    ];
     

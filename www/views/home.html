@@ -23,7 +23,7 @@
 			<div id="text-item-footer">
 
 				<div id="date">{{item.date}}</div>
-				<div id="place-desc">{{item.company}}</div>
+				<div id="place-desc"><a ng-href="#/company/{{item.company}}">{{item.company}}</a></div>
 
 			</div>
 
@@ -38,7 +38,7 @@
 
 		<div class="thumb-feed">
 			
-			<div ng-repeat="item in feed" class="img-thumb"><img ng-src="{{item.img}}"></div>
+			<div ng-repeat="item in feed" class="img-thumb"><a ng-href="#/feeditem/{{item.title}}"><img ng-src="{{item.img}}"></a></div>
 
 		</div>
 	</div>

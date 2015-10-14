@@ -2,7 +2,8 @@ app.controller('favoritesCtrl', ['$scope' , 'feedFact', function ($scope, feedFa
  
     $scope.title = "Favorites view";
         
-    console.log(feedFact.getLikes());
+    console.log(feedFact.getLikes())
+    $scope.showMenu = true;;
 
     $scope.page = "favorites";
     
