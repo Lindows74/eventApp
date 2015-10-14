@@ -23,7 +23,7 @@
   </feature>
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10"/>
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4"/>
-  <gap:splash src="resources/android/splash.png" />
+  <gap:splash src="splash.png" />
   <icon src="img/happningLogo.png"/>
   <platform name="android">
     <splash src="resources/android/splash/drawable-port-ldpi-screen.png" density="port-ldpi"/>
