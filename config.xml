@@ -15,7 +15,7 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
-  <preference name="SplashScreen" value="splash"/>
+  <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="30000"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <feature name="StatusBar">
@@ -23,7 +23,7 @@
   </feature>
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10"/>
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4"/>
-  <gap:splash src="splash.png" />
+  <gap:splash src="resources/android/splash.png" />
   <icon src="img/happningLogo.png"/>
   <platform name="android">
     <splash src="resources/android/splash/drawable-port-ldpi-screen.png" density="port-ldpi"/>
