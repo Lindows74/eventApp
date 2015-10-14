@@ -46,22 +46,22 @@
 		<gap:plugin name="org.apache.cordova.device"  />
 		<gap:plugin name="org.apache.cordova.geolocation"  />
 		<gap:plugin name="org.apache.cordova.splashscreen"  />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="57" height="57" />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="72" height="72" />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="114" height="114" />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="144" height="144" />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="76" height="76" />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="120" height="120" />
-		<icon src="www/img/happningLogo.png" gap:platform="ios" width="152" height="152" />
-		<icon src="www/img/happningLogo.png" gap:platform="android" gap:density="ldpi" />
-		<icon src="www/img/happningLogo.png" gap:platform="android" gap:density="mdpi" />
-		<icon src="www/img/happningLogo.png" gap:platform="android" gap:density="hdpi" />
-		<icon src="www/img/happningLogo.png" gap:platform="android" gap:density="xhdpi" />
-		<icon src="www/img/happningLogo.png" gap:platform="android" gap:density="xxhdpi" />
-		<icon src="www/img/happningLogo.png" gap:platform="android" gap:density="xxxhdpi" />
-		<icon src="www/img/happningLogo.png" gap:platform="winphone" />
-		<icon src="www/img/happningLogo.png" gap:platform="winphone" gap:role="background" />
-		<icon src="www/img/happningLogo.png" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="57" height="57" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="72" height="72" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="114" height="114" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="144" height="144" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="76" height="76" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="120" height="120" />
+		<icon src="img/happningLogo.png" gap:platform="ios" width="152" height="152" />
+		<icon src="img/happningLogo.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="img/happningLogo.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="img/happningLogo.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="img/happningLogo.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="img/happningLogo.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="img/happningLogo.png" gap:platform="android" gap:density="xxxhdpi" />
+		<icon src="img/happningLogo.png" gap:platform="winphone" />
+		<icon src="img/happningLogo.png" gap:platform="winphone" gap:role="background" />
+		<icon src="img/happningLogo.png" />
 		<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
 		<gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
 		<gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
