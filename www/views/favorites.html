@@ -1,38 +1,22 @@
-<div class="topbar">
-	<p>vad händer</p><p style="font-size: 14px">karlshamn</p>
+<topbar></topbar>
+
+<div class="feed">
+
+	<div ng-hide="favorites.length > 0" class="bg-placeholder"><p>Du har inga gillade events</p></div>
+
+<ul>
+	<li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')">
+		<span></span>
+		<div class="search-desc-wrapper">
+			<a ng-href="#/feeditem/{{item.title}}/{{page}}">
+				<div class="search-title">{{ item.title }}</div>
+				<div class="search-desc">{{ item.company }}</div>
+			</a>
+		</div>
+		<div class="search-desc-date">{{ item.date }}</div>
+		<div ng-click="delItem($index)" ng-class="(favorites[$index].delmenu) ? 'delete-tab-open' : 'delete-tab-close'"><i class="fa fa-trash-o"></i></div>
+	</li>
+</ul>
 </div>
 
-<h1>{{title}}</h1>
-
-
-<div class="menubar">
-	<a ng-href="#/">
-		<div class="tab">
-		
-			<i class="fa fa-list-ul"></i>
-	
-		</div>
-	</a>
-	<a ng-href="#/search">
-		<div class="tab">
-		
-			<i class="fa fa-search"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/favorites">
-		<div class="tab active">
-		
-			<i class="fa fa-heart-o"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/settings">
-		<div class="tab">
-		
-			<i class="fa fa-cog"></i>
-	
-		</div>
-	</a>	
-	
-</div>
+<navmenu></navmenu>

@@ -1,38 +1,30 @@
-<div class="topbar">
-	<p>vad händer</p><p style="font-size: 14px">karlshamn</p>
+<topbar></topbar>
+
+<div class="feed">
+	
+	<div class="info-box">
+		<div class="company-title">{{ title }}</div>
+		<div class="company-desc">{{ info.description }}</div>
+		<span></span>
+		<div class="company-details">
+			<table>
+				<tr>
+					<td>Telefon:</td>
+					<td>{{ info.phoneNr }}</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td>{{ info.email }}</td>
+				</tr>
+				<tr>
+					<td>Adress:</td>
+					<td>{{ info.adress }} <br>{{ info.zipcode }}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
 </div>
 
-<h1>{{title}}</h1>
 
-
-<div class="menubar">
-	<a ng-href="#/">
-		<div class="tab active">
-		
-			<i class="fa fa-list-ul"></i>
-	
-		</div>
-	</a>
-	<a ng-href="#/search">
-		<div class="tab">
-		
-			<i class="fa fa-search"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/favorites">
-		<div class="tab">
-		
-			<i class="fa fa-heart-o"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/settings">
-		<div class="tab">
-		
-			<i class="fa fa-cog"></i>
-	
-		</div>
-	</a>	
-	
-</div>
+<navmenu></navmenu>

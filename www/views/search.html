@@ -1,40 +1,25 @@
-<div class="topbar">
-	<p>vad händer</p><p style="font-size: 14px">karlshamn</p>
+<topbar></topbar>
+<div ng-init="init()"></div>
+<div class="feed">
+
+	<div class="search-wrapper">
+		<img src="img/icons/search.svg">
+		<input type="text" placeholder="Sök event..." ng-model="query" ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
+	</div>
+		<ul ng-show="query.length > 0">
+			<li ng-repeat="item in feed | filter: query">
+				<a ng-href="#/feeditem/{{item.title}}/{{page}}">
+					<span></span>
+					<div class="search-desc-wrapper">
+						<div class="search-title">{{ item.title }}</div>
+						<div class="search-desc">{{ item.company }}</div>
+					</div>
+					<div class="search-desc-date">{{ item.date }}</div>
+				</a>
+			</li>
+		</ul>
+
 </div>
 
-<div class="search-wrapper">
-	<i class="fa fa-search"></i>
-	<input type="text" placeholder="Sök">
-</div>
+<navmenu></navmenu>
 
-<div class="menubar">
-	<a ng-href="#/">
-		<div class="tab">
-		
-			<i class="fa fa-list-ul"></i>
-	
-		</div>
-	</a>
-	<a ng-href="#/search">
-		<div class="tab active">
-		
-			<i class="fa fa-search"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/favorites">
-		<div class="tab">
-		
-			<i class="fa fa-heart-o"></i>
-
-		</div>
-	</a>
-	<a ng-href="#/settings">
-		<div class="tab">
-		
-			<i class="fa fa-cog"></i>
-	
-		</div>
-	</a>	
-	
-</div>

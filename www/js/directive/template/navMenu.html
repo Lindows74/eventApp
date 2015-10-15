@@ -1,0 +1,23 @@
+<div class="menubar" ng-show="showMenu">
+	<a ng-href="#/">
+		<div class="tab">
+			<!-- <i class="fa fa-list-ul"></i> -->
+			<span class="feed-icon" ng-class=" (page === 'home') ? 'active' : ''"></span>
+		</div>
+	</a>
+	<a ng-href="#/search">
+		<div class="tab">
+			<span class="search-icon" ng-class=" (page === 'search') ? 'active' : ''"></span>
+		</div>
+	</a>
+	<a ng-href="#/favorites">
+		<div class="tab">
+			<span class="favorites-icon" ng-class=" (page === 'favorites') ? 'active' : ''"></span>
+		</div>
+	</a>
+	<a ng-href="#/settings">
+		<div class="tab">
+			<span class="settings-icon" ng-class=" (page === 'settings') ? 'active' : ''"></span>
+		</div>
+	</a>	
+</div>

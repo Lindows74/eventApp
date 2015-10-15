@@ -1,0 +1,40 @@
+
+
+.bg-placeholder
+	width: 80%
+	height: 100%
+	+flex(center)
+	margin: 0 auto
+	text-align: center
+	+standard()
+	text-transform: capitalize
+	color: rgba(91,103,123,0.6)
+	line-height: 1.2
+	font-size: 30px
+
+.delete-tab-open
+	background: radial-gradient(at left center,     #248ab9, #403f90)
+	+flex(center)
+	width: 30%
+	height: 100%
+	position: absolute
+	top: 0
+	right: 0
+	font-size: 30px
+	color: rgba(255,255,255,0.7)
+	transition: all(700ms) ease-in-out
+	box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.3)
+
+
+.delete-tab-close
+	background: radial-gradient(at left center,     #248ab9, #403f90)
+	+flex(center)
+	width: 30%
+	height: 100%
+	position: absolute
+	top: 0
+	right: -45%
+	font-size: 30px
+	color: rgba(255,255,255,0.7)
+	box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.3)
+	transition: all(700ms) ease-in-out
