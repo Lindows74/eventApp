@@ -45,7 +45,7 @@ app.factory('feedFact', function() {
                     },
                     {
                         "title": "Utebio",
-                        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQITtOqJ-KvKkp7-zxO2Z6P6NnmTZp-PI7sG4SETt6rwQrkGnDbxg",
+                        "img": "http://umea2014.se/wp-content/uploads/2013/08/BioiParken_webb.jpg",
                         "description": "Kvällen bjuder på filmer såsom Pulpfiction och Alien",
                         "likes": 0,
                         "company": "Bio Metropol",
@@ -77,7 +77,7 @@ app.factory('feedFact', function() {
                     },
                     {
                         "title": "Ekologisk Skördemarkand",
-                        "img": "http://www.thinkorganic.se/wp-content/uploads/2014/09/mandelmanns.jpg",
+                        "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn%3AANd9GcShTscybbtoeVCvMFSTGuNqxmPYkY4dE6HnoVU8ySJZOGCSbgQ",
                         "description": "Här kan du köpa närodlad Ekologisk mat av högsta kvalitet.",
                         "likes": 0,
                         "company": "Torgaktivitet AB",
@@ -85,7 +85,7 @@ app.factory('feedFact', function() {
                     },
                     {
                         "title": "Konstutställning",
-                        "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMytlXX2f1PLhU5ozNEfiwqMPFMO0_IrEZRPO-1z8xjxOhbA6Q",
+                        "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn%3AANd9GcSvvTXtAVJnMgceitw79Val7ohGQVihDk_UlSpSDObJ-X4WD0cX",
                         "description": "Många av traktens konstnärer kommer ställa ut i kommunhuset under hela helgen.",
                         "likes": 0,
                         "company": "Blekinge Län",
