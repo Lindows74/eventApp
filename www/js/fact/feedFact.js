@@ -102,17 +102,61 @@ app.factory('feedFact', function() {
                    ];
                    
     var companies = {
-        "Citygallerian": {},
-        "Karlshamns Kommun": {},
-        "Cirkus Cirkör": {},
-        "&Vin": {},
-        "Carl Gustafs Kyrkan": {},
-        "Bio Metropol": {},
-        "Blekinge Tekniska Högskola": {},
-        "Bonken": {},
-        "Blekinge Län": {},
-        "Torgaktivitet AB": {},
-        "Tures Resturant": {}
+        "Citygallerian": {
+            "description": "Karlshamns Citygallera ligger mitt i stan nära till allt. Här kan du göra allt från att shoppa till att låna böker i vårat biblotek och fika. Välkommna till Karlshamns trevligaste platts!",
+            "phoneNr": "020 123 12 12",
+            "email": "Citygallerian@Karlshamn.se"
+        },
+        "Karlshamns Kommun": {
+            "description": "Karlshamns Kommun anordnar flera event varje år, bland annat så anordnar vi de årliga marknaderna och konsterter på torget.",
+            "phoneNr": "020 321 32 32",
+            "email": "info@karlshamnskommun.se"
+        },
+        "Cirkus Cirkör": {
+            "description": "Cirkus Cirkör startades 1995 med målet att etablera nycirkuskonsten i Sverige, konstnärligt och pedagogiskt samt sätta Sverige på nycirkusens världskarta.",
+            "phoneNr": "020 213 21 21",
+            "emial": "cirkus@cirkor.se"
+        },
+        "&Vin": {
+            "description": "Vi har stor erfarenhet av fester & event och vi tar oss gärna tid att visa er våra lokaler och möjligheter. Vi kan hjälpa till med bokning av trubadurer, liveband, stand up comedy, teambildningar, vinprovningar mm.",
+            "phoneNr": "020 546 45 54",
+            "emial": "&Vin@gamil.com"
+        },
+        "Carl Gustafs Kyrkan": {
+            "description": "Carl Gustafs kyrka i Karlshamns församling i Lunds stift är ritad av Erik Dahlbergh. Kyrkan, som ligger mitt i Karlshamn, började byggas på 1680-talet och invigdes 1702, med namn efter stadens grundare Karl X Gustav.",
+            "phoneNr": "020 789 78 78",
+            "emial": "Cgkyrkan@svenskakyrkan.se"
+        },
+        "Bio Metropol": {
+            "description": "Metropol i Karlshamn är en av de klassiska biograferna. Byggd 1923 av Kapten O.W Ericsson och ritad av arkitekt Axel Stenberg, vilken även hade ritat biografen Victoria i Malmö.",
+            "phoneNr": "020 987 98 98",
+            "emial": "metropo@karlshamn.se"
+        },
+        "Blekinge Tekniska Högskola": {
+            "description": "För oss är det naturligt med ett nära samarbete med näringslivet och arbetsmarknaden under studietiden. Vi har forskare som är bland de främsta i världen inom sina områden och studenter som vunnit priser för sina goda idéer.",
+            "phoneNr": "404 40 44 04",
+            "emial": "Bth@blekinge.se",
+        },
+        "Bånken": {
+            "description": "Bånken är inte enbart en restaurang och pub utan vi har även Club Nights onsdag, fredag, lördag samt liveunderhållning och musik-quiz vissa kvällar.",
+            "phoneNr": "567 657 65",
+            "emial": "Banken@banken.se", 
+        },
+        "Blekinge Län": {
+            "description": "Efter att ha tillfallit Sverige år 1658 stod Blekinge under Kristianstads län fram till år 1680 då det förenades med Kalmar län. År 1683 upprättades emellertid Blekinge län, vilket har bestått oavbrutet sedan dess.",
+            "phoneNr": "546 54 54",
+            "emial": "Blekinge@hotmail.se",
+        },
+        "Torgaktivitet AB": {
+            "description": "Vi anordnar olika sorters events på torg i hela Sverige",
+            "phoneNr": "879 87 87",
+            "emial": "torget@gamil.com",
+        },
+        "Tures Resturant": {
+            "description": "Tures Resturant är Karlshamns absolut anrikaste restaurang, belägen där ingen hittar oss men med sverigest godaste mat.",
+            "phoneNr": "708 78 78",
+            "emial": "tures@gamil.com",
+        }
     };
     
     return {
