@@ -49,7 +49,7 @@ app.factory('feedFact', function() {
                         "description": "Kvällen bjuder på filmer såsom Pulpfiction och Alien",
                         "likes": 0,
                         "company": "Bio Metropol",
-                        "date": "01-08-2015"
+                        "date": "01-08-2015",
                     },
                     {
                         "title": "Föreläsning, Technovetenskap",
@@ -72,7 +72,7 @@ app.factory('feedFact', function() {
                         "img": "http://www.sfmontessori.se/wp-content/uploads/2013/04/SF-Montessori_Loppis_2013_poster1.jpg",
                         "description": "Kom och fynda allt som du kan tänka dig! över 200 bord stor loppis!",
                         "likes": 0,
-                        "company": "Blekinge Kommun",
+                        "company": "Blekinge Län",
                         "date": "04-11-2015"
                     },
                     {
@@ -88,7 +88,7 @@ app.factory('feedFact', function() {
                         "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMytlXX2f1PLhU5ozNEfiwqMPFMO0_IrEZRPO-1z8xjxOhbA6Q",
                         "description": "Många av traktens konstnärer kommer ställa ut i kommunhuset under hela helgen.",
                         "likes": 0,
-                        "company": "Blekinge Kommun",
+                        "company": "Blekinge Län",
                         "date": "04-09-2015"
                     },
                     {
@@ -100,10 +100,31 @@ app.factory('feedFact', function() {
                         "date": "04-09-2015"
                     }
                    ];
+                   
+    var companies = {
+        "Citygallerian": {},
+        "Karlshamns Kommun": {},
+        "Cirkus Cirkör": {},
+        "&Vin": {},
+        "Carl Gustafs Kyrkan": {},
+        "Bio Metropol": {},
+        "Blekinge Tekniska Högskola": {},
+        "Bonken": {},
+        "Blekinge Län": {},
+        "Torgaktivitet AB": {},
+        "Tures Resturant": {}
+    };
     
     return {
         getFeed: function() {
             return feed;
+        },
+        getFeedItem: function(name) {
+            for (var i = 0; i < feed.length; i++) {
+                if(feed[i].title == name){
+                    return feed[i];
+                }
+            }
         },
         getLikes: function(){
             return likes;
@@ -115,6 +136,9 @@ app.factory('feedFact', function() {
         removeLikes: function(index){
             feed[index].likes = feed[index].likes - 1; 
             likes.splice(index, 1); 
+        },
+        getCompanyInfo: function(name){
+            return companies[name];
         }
     };
 });
