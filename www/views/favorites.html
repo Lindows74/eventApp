@@ -2,14 +2,16 @@
 
 <div class="feed">
 
-	<div class="bg-placeholder"><p>Du har inga gillade events</p></div>
+	<div ng-hide="favorites.length > 0" class="bg-placeholder"><p>Du har inga gillade events</p></div>
 
 <ul>
 	<li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')">
 		<span></span>
 		<div class="search-desc-wrapper">
-			<div class="search-title">{{ item.title }}</div>
-			<div class="search-desc">{{ item.company }}</div>
+			<a ng-href="#/feeditem/{{item.title}}">
+				<div class="search-title">{{ item.title }}</div>
+				<div class="search-desc">{{ item.company }}</div>
+			</a>
 		</div>
 		<div class="search-desc-date">{{ item.date }}</div>
 		<div ng-click="delItem($index)" ng-class="(favorites[$index].delmenu) ? 'delete-tab-open' : 'delete-tab-close'"><i class="fa fa-trash-o"></i></div>
