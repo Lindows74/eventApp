@@ -1,52 +1,50 @@
-
-.date-search-wrapper
-	width: 90%
-	+flex(space-between)
-	margin: 20px auto
-
-	.date-btn
-		width: 70px
-		height: 20px
-		border: 1px solid white 
-		border-radius: 20px
-		+standard()
-		color: white
-		font-size: 10px
-		+flex(center)
-		text-transform: uppercase
-
-	.date-active
-		background: rgba(255,255,255,0.3)
-
-
-
-.search-wrapper
-	+flex(center)
-	padding: 20px
-	color: $light-blue
-	font-size: 30px
-
-	input 
-		width: 70%
-		background: transparent
-		border-bottom: 1px solid $light-blue
-		color: $light-blue
-		padding-left: 20px
-		margin-left: 20px
-		
-
-		&::-webkit-input-placeholder 
-			color: $light-blue
-			text-transform: uppercase
-			letter-spacing: 5px
-
 .feed
+	.date-search-wrapper
+		width: 90%
+		+flex(space-between)
+		margin: 20px auto
+
+		.date-btn
+			width: 70px
+			height: 20px
+			border: 1px solid white 
+			border-radius: 20px
+			+standard()
+			color: white
+			font-size: 10px
+			+flex(center)
+			text-transform: uppercase
+
+		.date-active
+			background: rgba(255,255,255,0.3)
+
+
+
+	.search-wrapper
+		+flex(center)
+		padding-top: 20px
+		color: $light-blue
+		font-size: 30px
+
+		input 
+			width: 70%
+			background: transparent
+			border-bottom: 1px solid $light-blue
+			color: $light-blue
+			padding-left: 20px
+			margin-left: 20px
+			
+
+			&::-webkit-input-placeholder 
+				color: $light-blue
+				text-transform: uppercase
+				letter-spacing: 5px
 
 
 	ul
 		width: 98%
 		display: block
-		margin: 20px auto
+		margin: 20px auto 
 
 		li 
 			position: relative

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.eventapp425506" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>eventApp</name>
+    <name>Happnings</name>
     <description>
         Lists local events nearby
     </description>
@@ -10,6 +10,7 @@
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
+  <preference name="orientation" value="portrait" />
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
@@ -17,4 +18,8 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+  
+  <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+
+  <icon src="img/happningLogo.png" />
 </widget>

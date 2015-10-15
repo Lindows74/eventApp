@@ -4,12 +4,19 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
     
     $scope.page = "home";
     
+    $scope.thumb = false;
+    
     $scope.feed = feedFact.getFeed();
+
     
     console.log(feedFact.getFeed());
     
     $scope.likePost =  function($index){
-        alert("likeing post? " + $scope.feed[$index].title);
+        feedFact.setLikes($index);
+    }
+
+    $scope.changeFeed = function(){
+        $scope.thumb  = !$scope.thumb;
     }
 
 }]);
