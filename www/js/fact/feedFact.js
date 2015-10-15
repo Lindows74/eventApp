@@ -196,6 +196,7 @@ app.factory('feedFact', function() {
             for (var i = 0; i < feed.length; i++) {
                 if(feed[i].title == name){
                     feed[i].likes = feed[i].likes + 1;
+                    if(likes.indexOf(feed[i]) == -1) likes.push(feed[i]);
                 }
             }
         },
