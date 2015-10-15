@@ -45,12 +45,12 @@ var app = angular.module('starter', ['ionic'])
     }
   })
   .state('company', {
-    url: '/company/:name',
+    url: '/company/:name/:prev',
     templateUrl: 'views/company.html',
     controller: 'companyCtrl'
   })
   .state('feeditem', {
-    url: '/feeditem/:title',
+    url: '/feeditem/:title/:prev',
     templateUrl: 'views/feeditem.html',
     controller: 'feeditemCtrl'
   });

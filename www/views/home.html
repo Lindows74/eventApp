@@ -22,7 +22,7 @@
 			<div id="desc">{{item.description}}</div>
 			<div id="text-item-footer">
 
-				<div id="place-desc"><a style="color: #35c8dc;" ng-href="#/company/{{item.company}}">{{item.company}}</a></div>
+				<div id="place-desc"><a style="color: #35c8dc;" ng-href="#/company/{{item.company}}/{{page}}">{{item.company}}</a></div>
 				<div id="date">{{item.date}}</div>
 				
 
@@ -33,13 +33,13 @@
 
 	<div ng-show="thumb" class="thumb-wrapper">
 		<div class="week">
-			<p>vecka 48</p>
-			<span></span>
+			<!-- <p>vecka 48</p>
+			<span></span> -->
 		</div>
 
 		<div class="thumb-feed">
 			
-			<div ng-repeat="item in feed" class="img-thumb"><a ng-href="#/feeditem/{{item.title}}"><img ng-src="{{item.img}}"></a></div>
+			<div ng-repeat="item in feed" class="img-thumb"><a ng-href="#/feeditem/{{item.title}}/{{page}}"><img ng-src="{{item.img}}"></a></div>
 
 		</div>
 	</div>

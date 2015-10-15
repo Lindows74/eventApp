@@ -1,8 +1,11 @@
-app.controller('companyCtrl', ['$scope' ,'$stateParams', function ($scope, $stateParams) {
+app.controller('companyCtrl', ['$scope' ,'$stateParams', 'feedFact', function ($scope, $stateParams, feedFact) {
  
-    $scope.title = "company view";
+    $scope.title = $stateParams.name;
     $scope.showMenu = true;
+    $scope.page = $stateParams.prev;
     
-    console.log($stateParams);
+    $scope.info = feedFact.getCompanyInfo($stateParams.name);
+    
+    console.log(feedFact.getCompanyInfo($stateParams.name));
     
 }]);
