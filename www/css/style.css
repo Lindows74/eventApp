@@ -599,6 +599,10 @@
 p {
   margin: 0; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 .pane {
   background-image: url("../img/contentBg.jpg");
   background-size: cover; }
