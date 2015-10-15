@@ -23,7 +23,4 @@
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 
   <icon src="img/happningLogo.png" />
-  <preference name="AutoHideSplashScreen" value="false" />
-  <preference name="SplashScreen" value="img/splashscreen.png" />
-  <preference name="SplashScreenDelay" value="30000" />
 </widget>

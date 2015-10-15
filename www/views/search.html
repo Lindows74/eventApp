@@ -1,19 +1,21 @@
 <topbar></topbar>
-
+<div ng-init="init()"></div>
 <div class="feed">
 
 	<div class="search-wrapper">
 		<img src="img/icons/search.svg">
-		<input ng-model="searchToken" type="text" placeholder="Sök event..." ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
+		<input type="text" placeholder="Sök event..." ng-model="query" ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
 	</div>
-		<ul>
-			<li ng-repeat="item in feed | filter:searchToken">
-				<span></span>
-				<div class="search-desc-wrapper">
-					<div class="search-title">{{ item.title }}</div>
-					<div class="search-desc">{{ item.company }}</div>
-				</div>
-				<div class="search-desc-date">{{ item.date }}</div>
+		<ul ng-show="query.length > 0">
+			<li ng-repeat="item in feed | filter: query">
+				<a ng-href="#/feeditem/{{item.title}}">
+					<span></span>
+					<div class="search-desc-wrapper">
+						<div class="search-title">{{ item.title }}</div>
+						<div class="search-desc">{{ item.company }}</div>
+					</div>
+					<div class="search-desc-date">{{ item.date }}</div>
+				</a>
 			</li>
 		</ul>
 

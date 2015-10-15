@@ -3,6 +3,7 @@ app.controller('settingsCtrl', ['$scope', '$http', 'cities', 'geo', 'feedFact',f
     $scope.title = "Settings view";
     
     $scope.locationServices = true;
+    $scope.showMenu = true;
     
     geo.getLocation().then(function(data){
         $scope.location = data;    
