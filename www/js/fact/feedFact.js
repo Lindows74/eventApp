@@ -64,7 +64,7 @@ app.factory('feedFact', function() {
                         "img": "https://cdn2.cdnme.se/cdn/6-2/1513845/images/2011/beggars-banquet-12-augusti-poster_160860297.jpg",
                         "description": "Månadens sista kväll för våran utebar, kom och fynda.",
                         "likes": 0,
-                        "company": "Bonken",
+                        "company": "Bånken",
                         "date": "04-10-2015"
                     },
                     {
@@ -133,7 +133,7 @@ app.factory('feedFact', function() {
         "Carl Gustafs Kyrkan": {
             "description": "Carl Gustafs kyrka i Karlshamns församling i Lunds stift är ritad av Erik Dahlbergh. Kyrkan, som ligger mitt i Karlshamn, började byggas på 1680-talet och invigdes 1702, med namn efter stadens grundare Karl X Gustav.",
             "phoneNr": "020 789 78 78",
-            "emial": "Cgkyrkan@svenskakyrkan.se",
+            "email": "Cgkyrkan@svenskakyrkan.se",
             "adress": "strågatan 2",
             "zipcode": "112233, Karlshamn"
         },
@@ -147,35 +147,35 @@ app.factory('feedFact', function() {
         "Blekinge Tekniska Högskola": {
             "description": "För oss är det naturligt med ett nära samarbete med näringslivet och arbetsmarknaden under studietiden. Vi har forskare som är bland de främsta i världen inom sina områden och studenter som vunnit priser för sina goda idéer.",
             "phoneNr": "404 40 44 04",
-            "emial": "Bth@blekinge.se",
+            "email": "Bth@blekinge.se",
             "adress": "strågatan 2",
             "zipcode": "112233, Karlshamn"
         },
         "Bånken": {
             "description": "Bånken är inte enbart en restaurang och pub utan vi har även Club Nights onsdag, fredag, lördag samt liveunderhållning och musik-quiz vissa kvällar.",
             "phoneNr": "567 657 65",
-            "emial": "Banken@banken.se",
+            "email": "Banken@banken.se",
             "adress": "strågatan 2",
             "zipcode": "112233, Karlshamn"
         },
         "Blekinge Län": {
             "description": "Efter att ha tillfallit Sverige år 1658 stod Blekinge under Kristianstads län fram till år 1680 då det förenades med Kalmar län. År 1683 upprättades emellertid Blekinge län, vilket har bestått oavbrutet sedan dess.",
             "phoneNr": "546 54 54",
-            "emial": "Blekinge@hotmail.se",
+            "email": "Blekinge@hotmail.se",
             "adress": "strågatan 2",
             "zipcode": "112233, Karlshamn"
         },
         "Torgaktivitet AB": {
             "description": "Vi anordnar olika sorters events på torg i hela Sverige",
             "phoneNr": "879 87 87",
-            "emial": "torget@gamil.com",
+            "email": "torget@gamil.com",
             "adress": "strågatan 2",
             "zipcode": "112233, Karlshamn"
         },
         "Tures Resturant": {
             "description": "Tures Resturant är Karlshamns absolut anrikaste restaurang, belägen där ingen hittar oss men med sverigest godaste mat.",
             "phoneNr": "708 78 78",
-            "emial": "tures@gamil.com",
+            "email": "tures@gamil.com",
             "adress": "strågatan 2",
             "zipcode": "112233, Karlshamn"
         }
