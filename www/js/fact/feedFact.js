@@ -192,6 +192,13 @@ app.factory('feedFact', function() {
                 }
             }
         },
+        setLikesByTitle: function(name) {
+            for (var i = 0; i < feed.length; i++) {
+                if(feed[i].title == name){
+                    feed[i].likes = feed[i].likes + 1;
+                }
+            }
+        },
         getLikes: function(){
             return likes;
         },

@@ -7,6 +7,10 @@ app.controller('feeditemCtrl', ['$scope', '$stateParams', 'feedFact', function (
     
     $scope.info = feedFact.getFeedItem($stateParams.title);
     
-    console.log($stateParams)
-    console.log(feedFact.getFeedItem($stateParams.title));
+    $scope.likePost =  function(){
+        feedFact.setLikesByTitle($stateParams.title);
+        //$scope.info = feedFact.getFeedItem($stateParams.title)
+        console.log($scope.info);
+    }
+    
 }]);
