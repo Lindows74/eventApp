@@ -1,1 +1,33 @@
-<h1>{{ title }}</h1>
+<topbar></topbar>
+
+<div class="feed">
+	<div class="item-wrapper">
+		<div class="image-item">
+			<img ng-src="{{item.img}}" on-double-tap="likePost($index)">
+
+		</div>
+		<div class="text-item">
+
+			<div id="text-item-header">
+
+				<div id="title">{{item.title| limitTo: 25 }}{{item.title.length>25 ?"...": ""}}</div>
+				
+				<div id="likes" ng-click="likePost($index)">
+					<span ng-if="item.likes">{{item.likes}}</span>
+					<i class="fa fa-heart-o" ng-class=" (feed[$index].likes > 0) ? 'active' : ''"></i> 
+				</div>
+
+			</div>
+			<div id="desc">{{item.description}}</div>
+			<div id="text-item-footer">
+
+				<div id="date">{{item.date}}</div>
+				<div id="place-desc">{{item.company}}</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<navmenu></navmenu>

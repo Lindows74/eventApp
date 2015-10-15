@@ -1,1 +1,1 @@
-app.controller("companyCtrl",["$scope",function(o){o.title="company view"}]);
+app.controller("companyCtrl",["$scope",function(o){o.title="company "}]);
