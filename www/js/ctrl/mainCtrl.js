@@ -1,4 +1,4 @@
-app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
+app.controller('mainCtrl', ['$scope', 'feedFact', '$ionicPlatform', function ($scope, feedFact, $ionicPlatform ) {
  
     $scope.title = "Main view";
     
@@ -11,6 +11,10 @@ app.controller('mainCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
 
     
     console.log(feedFact.getFeed());
+    
+    $ionicPlatform.on("resume", function(){
+         $scope.thumb = false;
+    });
     
     $scope.likePost =  function($index){
         feedFact.setLikes($index);
