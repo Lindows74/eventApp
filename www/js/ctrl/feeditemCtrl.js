@@ -1,7 +1,12 @@
-app.controller('feeditemCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
+app.controller('feeditemCtrl', ['$scope', '$stateParams', 'feedFact', function ($scope, $stateParams, feedFact) {
  
-    $scope.title = "Feed item view";
+    
     $scope.showMenu = true;
     
-    console.log($stateParams);
+    $scope.page = $stateParams.prev;
+    
+    $scope.info = feedFact.getFeedItem($stateParams.title);
+    
+    console.log($stateParams)
+    console.log(feedFact.getFeedItem($stateParams.title));
 }]);

@@ -6,10 +6,9 @@
 		<img src="img/icons/search.svg">
 		<input type="text" placeholder="Sök event..." ng-model="query" ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
 	</div>
-	<div class="feed">
-		<ul>
+		<ul ng-show="query.length > 0">
 			<li ng-repeat="item in feed | filter: query">
-				<a ng-href="#/feeditem/{{item.title}}">
+				<a ng-href="#/feeditem/{{item.title}}/{{page}}">
 					<span></span>
 					<div class="search-desc-wrapper">
 						<div class="search-title">{{ item.title }}</div>
@@ -19,7 +18,7 @@
 				</a>
 			</li>
 		</ul>
-	</div>
+
 </div>
 
 <navmenu></navmenu>

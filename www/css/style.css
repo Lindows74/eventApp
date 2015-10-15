@@ -41,7 +41,7 @@
     .menubar .tab .settings-icon {
       -webkit-mask-image: url(../img/icons/settings.svg); }
     .menubar .tab .active {
-      background-color: #DF6F1A; }
+      background-color: #35c8dc; }
 
 .topbar {
   position: relative;
@@ -64,6 +64,14 @@
     height: 35px;
     font-size: 20px;
     color: #5b677b; }
+  .topbar span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 40px;
+    color: white; }
 
 /* .slideThree */
 .slideThree {
@@ -85,7 +93,7 @@
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15); }
   .slideThree:before {
     content: 'PÅ';
-    color: #DF6F1A;
+    color: #35c8dc;
     position: absolute;
     left: 5px;
     top: 2px;
@@ -170,7 +178,7 @@
           font-family: "Lato";
           font-weight: 300;
           font-size: 30px;
-          color: #DF6F1A; }
+          color: #35c8dc; }
           .feed .item-wrapper .text-item #text-item-header #likes span {
             font-family: "Lato";
             font-weight: 300;
@@ -178,7 +186,7 @@
           .feed .item-wrapper .text-item #text-item-header #likes i {
             color: #5b677b; }
           .feed .item-wrapper .text-item #text-item-header #likes .active {
-            color: #DF6F1A; }
+            color: #35c8dc; }
       .feed .item-wrapper .text-item #desc {
         width: 100%;
         height: 50%;
@@ -191,7 +199,7 @@
         font-family: "Lato";
         font-weight: 300;
         font-size: 18px;
-        color: #DF6F1A;
+        color: #35c8dc;
         display: flex;
         justify-content: space-between;
         align-items: center; }
@@ -205,7 +213,7 @@
       font-family: "Lato";
       font-weight: 300;
       font-size: 12px;
-      color: #DF6F1A;
+      color: #35c8dc;
       text-transform: capitalize;
       display: flex;
       flex-direction: column;
@@ -214,7 +222,7 @@
       .feed .thumb-wrapper .week span {
         width: 100%;
         height: 1px;
-        background: #DF6F1A;
+        background: #35c8dc;
         margin-top: 5px; }
     .feed .thumb-wrapper .thumb-feed {
       width: 98%;
@@ -232,13 +240,13 @@
           width: 100%;
           height: 100%; }
 
-.date-search-wrapper {
+.feed .date-search-wrapper {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px auto; }
-  .date-search-wrapper .date-btn {
+  .feed .date-search-wrapper .date-btn {
     width: 70px;
     height: 20px;
     border: 1px solid white;
@@ -252,28 +260,26 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase; }
-  .date-search-wrapper .date-active {
+  .feed .date-search-wrapper .date-active {
     background: rgba(255, 255, 255, 0.3); }
-
-.search-wrapper {
+.feed .search-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
   color: #5b677b;
   font-size: 30px; }
-  .search-wrapper input {
+  .feed .search-wrapper input {
     width: 70%;
     background: transparent;
     border-bottom: 1px solid #5b677b;
     color: #5b677b;
     padding-left: 20px;
     margin-left: 20px; }
-    .search-wrapper input::-webkit-input-placeholder {
+    .feed .search-wrapper input::-webkit-input-placeholder {
       color: #5b677b;
       text-transform: uppercase;
       letter-spacing: 5px; }
-
 .feed ul {
   width: 98%;
   display: block;
@@ -501,8 +507,101 @@
     color: white;
     display: none; }
 
+.info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  font-size: 14px;
+  width: 95%;
+  height: 84%;
+  padding: 0 20px;
+  margin: 5px auto;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  border-top: 2px solid rgba(91, 103, 123, 0.4); }
+  .info-box .company-title {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; }
+  .info-box .company-desc {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px; }
+  .info-box span {
+    position: relative;
+    width: 80%;
+    margin: 40px 0 20px;
+    height: 1px;
+    background: #5b677b; }
+  .info-box .company-details {
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px; }
+    .info-box .company-details table {
+      width: 80%; }
+      .info-box .company-details table tr {
+        margin-bottom: 10px; }
+        .info-box .company-details table tr td {
+          margin-right: 10px; }
+  @media (max-height: 600px) {
+    .info-box .company-title {
+      position: relative;
+      top: 10%; }
+    .info-box .company-desc {
+      font-size: 12px;
+      margin-top: 5%; }
+    .info-box span {
+      margin: 15px 0 5px; }
+    .info-box .company-details {
+      font-size: 12px; } }
+
+.back-btn {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: white; }
+  .back-btn span {
+    width: 10px;
+    height: 10px;
+    margin: -12px 20px 0; }
+    .back-btn span img {
+      width: 100%;
+      height: auto; }
+
 p {
   margin: 0; }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 .pane {
   background-image: url("../img/contentBg.jpg");

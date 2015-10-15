@@ -1,6 +1,31 @@
 <topbar></topbar>
 
-<h1>{{title}}</h1>
+<div class="feed">
+	
+	<div class="info-box">
+		<div class="company-title">{{ title }}</div>
+		<div class="company-desc">{{ info.description }}</div>
+		<span></span>
+		<div class="company-details">
+			<table>
+				<tr>
+					<td>Telefon:</td>
+					<td>{{ info.phoneNr }}</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td>{{ info.email }}</td>
+				</tr>
+				<tr>
+					<td>Adress:</td>
+					<td>{{ info.adress }} <br>{{ info.zipcode }}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="back-btn"><span><img src="img/icons/chevLeft.svg"></span> tillbaka</div>
+
+</div>
 
 
 <navmenu></navmenu>
