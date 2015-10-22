@@ -1,3 +1,4 @@
+//author Filip Ramstedt, Oskar Stålstierna
 app.factory('feedFact', function() {
     
     var likes = [];

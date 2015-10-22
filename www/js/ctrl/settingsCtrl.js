@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 app.controller('settingsCtrl', ['$scope', '$http', 'cities', 'geo', 'feedFact',function ($scope, $http, cities, geo, feedFact) {
  
     $scope.title = "Settings view";

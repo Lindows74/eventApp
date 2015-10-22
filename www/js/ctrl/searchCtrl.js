@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 app.controller('searchCtrl', ['$scope', 'feedFact' ,function ($scope, feedFact) {
  
     $scope.title = "Search view";

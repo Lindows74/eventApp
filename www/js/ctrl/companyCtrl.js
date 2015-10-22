@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 app.controller('companyCtrl', ['$scope' ,'$stateParams', 'feedFact', function ($scope, $stateParams, feedFact) {
  
     $scope.title = $stateParams.name;
