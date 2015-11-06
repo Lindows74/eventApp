@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 app.directive('topbar', function() {
   return {
     restrict: 'E',

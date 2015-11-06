@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 app.factory('geo',['$http', '$q', function($http, $q) {
     
     var location = null

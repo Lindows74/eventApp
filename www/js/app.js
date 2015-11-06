@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 var app = angular.module('starter', ['ionic'])
 
 .run(function($ionicPlatform) {

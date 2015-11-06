@@ -1,5 +1,5 @@
+//author Filip Ramstedt
 app.controller('feeditemCtrl', ['$scope', '$stateParams', 'feedFact', function ($scope, $stateParams, feedFact) {
- 
     
     $scope.showMenu = true;
     

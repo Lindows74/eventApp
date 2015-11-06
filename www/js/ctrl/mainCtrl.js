@@ -1,3 +1,4 @@
+//author Filip Ramstedt
 app.controller('mainCtrl', ['$scope', 'feedFact', '$ionicPlatform', function ($scope, feedFact, $ionicPlatform ) {
  
     $scope.title = "Main view";

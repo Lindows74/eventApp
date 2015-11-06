@@ -1,3 +1,4 @@
+// author Filip Ramstedt
 app.controller('favoritesCtrl', ['$scope' , 'feedFact', function ($scope, feedFact) {
  
     $scope.title = "Favorites view";

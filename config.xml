@@ -22,5 +22,5 @@
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 
-  <icon src="img/happningLogo.png" />
+  <icon src="img/hlogo.png" />
 </widget>
