@@ -1,7 +1,11 @@
-/* author Nisse Löfgren */
 @charset "UTF-8";
+/* author Nisse Löfgren */
+/* author Nisse Löfgren */
+/* author Nisse Löfgren */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 @import url(tools/fontawesome/font-awesome.min.css);
+/* author Nisse Löfgren */
+/* author Nisse Löfgren */
 .menubar {
   position: fixed;
   display: flex;
@@ -44,6 +48,7 @@
     .menubar .tab .active {
       background-color: #35c8dc; }
 
+/* author Nisse Löfgren */
 .topbar {
   position: relative;
   width: 100%;
@@ -74,6 +79,7 @@
     font-size: 40px;
     color: white; }
 
+/* author Nisse Löfgren */
 /* .slideThree */
 .slideThree {
   width: 60px;
@@ -121,27 +127,26 @@
       left: 25px; }
 
 /* end .slideThree */
+/* author Nisse Löfgren */
 .feed {
   width: 100%;
   overflow: auto;
   height: calc( 100% - 130px);
   overflow-x: hidden; }
   .feed .item-wrapper {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column; }
     .feed .item-wrapper .image-item {
       width: 100%;
-      height: 65%;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0 10px; }
       .feed .item-wrapper .image-item img {
-        width: auto;
-        height: 100%; }
+        max-width: auto;
+        height: 60%; }
     .feed .item-wrapper .text-item {
       display: block;
       position: relative;
@@ -243,6 +248,7 @@
           width: 100%;
           height: 100%; }
 
+/* author Nisse Löfgren */
 .feed .date-search-wrapper {
   width: 90%;
   display: flex;
@@ -328,6 +334,7 @@
       font-size: 16px;
       font-size: 12px; }
 
+/* author Nisse Löfgren */
 .bg-placeholder {
   width: 80%;
   height: 100%;
@@ -374,6 +381,7 @@
   box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all(700ms) ease-in-out; }
 
+/* author Nisse Löfgren */
 .settings-wrapper {
   width: 100%;
   height: calc(100% - 125px);
@@ -510,6 +518,7 @@
     color: white;
     display: none; }
 
+/* author Nisse Löfgren */
 .info-box {
   display: flex;
   justify-content: center;
@@ -599,6 +608,7 @@
       width: 100%;
       height: auto; }
 
+/* author Nisse Löfgren */
 p {
   margin: 0; }
 
