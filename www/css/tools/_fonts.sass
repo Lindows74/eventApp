@@ -1,23 +1,28 @@
 /* author Nisse Löfgren */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700)
 
+@font-face 
+    font-family: "proxima"
+    src: url("/css/tools/fonts/ProximaNova-Regular.otf") format("OpenType")
+
 @mixin title()
 	font: 
-		family: 'Lato' 
+		family: 'proxima' 
 		weight: 300
 		size: 20px
 	text-transform: uppercase
 
-@mixin standard()
+@mixin standard($size)
 	font: 
-		family: 'Lato' 
+		family: 'proxima' 
 		weight: 300
-		size: 16px
+		size: $size
+        
 
 
 @mixin orange-text($size)
 	font: 
-		family: 'Lato' 
+		family: 'proxima' 
 		weight: 300
 		size: $size
 	color: $blue

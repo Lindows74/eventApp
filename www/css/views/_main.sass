@@ -1,84 +1,142 @@
-/* author Nisse Löfgren */
 .feed
-	width: 100%
-	overflow: auto
-	height: calc( 100% - 130px)
-	overflow-x: hidden
-	
-
-	.item-wrapper
-		width: 100vw
-		height: 100%
-		display: flex 
-		align-items: center
-		flex-direction: column
-
-
-		.image-item
-			width: 100%
-			height: 65%
-			+flex(center)
-			padding: 0 10px
-			img
-				width: auto 
-				height: 100%
-
-		.text-item
-			display: block
-			position: relative
-			width: 100%
-			height: 35%
-			+standard()
-			background: rgba(31,38,51,1)
-			color: white
-			padding: 0 10px
-			-moz-border-radius-bottomright: 3px
-			-webkit-border-bottom-right-radius: 3px
-			border-bottom-right-radius: 3px
-			-moz-border-radius-bottomleft: 3px
-			-webkit-border-bottom-left-radius: 3px
-			border-bottom-left-radius: 3px
-			box-sizing: border-box
-			border-bottom: 1px solid rgba(51,58,75,0.5)
-			box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3)
-
-			#text-item-header
-				width: 100%
-				height: 25%
-				margin-top: 5px
-				+flex(space-between)
-
-				#title
-					+title()
-					text-transform: capitalize
-					border-bottom: 1px solid rgba(91,103,123,0.6)
-					padding-bottom: 8px
-
-				#likes
-					span 
-						+standard()
-					+orange-text(30px)
-
-					i 
-						color: $light-blue
-
-					.active
-						color: $blue
-
-
-			#desc
-				width: 100%
-				height: 50%
-				+flex(center)
-
-			#text-item-footer
-				width: 100%
-				height: 25%
-				+orange-text(18px)
-				+flex(space-between)
-
-
-	.thumb-wrapper
+    width: 100%
+    height: 100%
+    overflow: scroll
+    
+    
+    .event-card
+        position: relative
+        width: 100%
+        height: 95vh
+        background: #000
+        margin-bottom: 20px
+        display: flex
+        align-items: flex-end
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2)
+        
+        .card-img-wrapper
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 95vh
+            img
+                width: 100%
+                height: 100%
+        
+        .card-text-box
+            width: 100%
+            height: 200px
+            background: rgba(255,255,255,0.95)
+            z-index: 9
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            padding: 10px 20px
+            border-bottom: 1px solid rgba(34,34,34,0.4)
+            
+            .card-first-row
+                width: 100%
+                height: 40px
+                +flex(space-between)
+                
+                
+                .card-title
+                    +standard(18px)
+                    text-transform: capitalize
+                    padding: 5px 2px
+                    box-sizing: border-box
+                    border-bottom: 1px solid rgba(34,34,34,0.4)
+                .card-like
+                    +standard(28px)
+                    
+                    span
+                        font-size: 16px
+                        
+            .card-desc
+                width: 100%
+                height: 70px
+                +flex(center)
+                +standard(14px)
+                
+            .card-location-time-wrapp
+                +flex(space-between)
+                width: 100%
+                height: 40px
+                
+                .card-location
+                    width: 50%
+                    height: 100%
+                    +flex(flex-start)
+                        
+                    .loc-icon
+                        width: 30px
+                        height: 30px
+                        font-size: 25px
+                        
+                    .loc-adress-wrapp
+                        height: 30px
+                        +flex(center)
+                        flex-direction: column
+                        
+                        .loc-adress
+                            width: 100%
+                            height: 15px
+                            +standard(12px)
+                            +flex(flex-start)
+                        .loc-zip
+                            width: 100%
+                            height: 15px
+                            +standard(10px)
+                            +flex(flex-start)
+                      
+                                
+                .card-time
+                    width: 50%
+                    height: 100%
+                    +flex(flex-end)
+                        
+                    .loc-icon
+                        width: 30px
+                        height: 30px
+                        font-size: 25px
+                        
+                    .loc-time-wrapp
+                        height: 30px
+                        +flex(center)
+                        flex-direction: column
+                        
+                        .loc-date
+                            width: 100%
+                            height: 15px
+                            +standard(12px)
+                            +flex(flex-start)
+                        .loc-time
+                            width: 100%
+                            height: 15px
+                            +standard(10px)
+                            +flex(flex-start)
+                                
+                                
+                        
+                .card-time
+                    width: 50%
+                    height: 100%
+                    +flex(flex-end)
+                
+                
+                
+            .card-company-name
+                width: 100%
+                height: 20px
+                +flex(center)
+                a
+                    +standard(14px)
+                    text-transform: uppercase
+                    color: $dark
+                    
+                    
+.thumb-wrapper
 		+flex(center)
 		flex-direction: column
 
@@ -117,4 +175,3 @@
 				img 
 					width: 100%
 					height: 100%
-

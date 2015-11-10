@@ -1,7 +1,26 @@
 <!-- author Nisse Löfgren -->
 <div class="topbar">
-	<p>Happnings</p><p style="font-size: 14px"> {{ location }}</p>
-	<div ng-show="page == 'home'"  ng-click="changeFeed()" class="thumb-icon"> <!-- Fixa så .item-wrapper = display: none och .thumb-wrapper = display: block -->
+    <div class="menu-btn">
+       <span class="first"></span>
+       <span class="second"></span>
+       <span class="third"></span>
+    </div>
+    
+	<p style="font-size: 14px"> {{ location }}</p>
+	
+	<div class="topbar-icon-wrapper">
+	    <div ng-show="page == 'home'"  ng-click="changeFeed()" class="thumb-icon"> <!-- Fixa så .item-wrapper = display: none och .thumb-wrapper = display: block -->
 		<i class="fa fa-clone"></i>
-	</div>
+	    </div>
+	    <div class="search-icon">
+	        <img src="../../../img/icons/search.svg" alt="">
+	    </div>
+	    <input class="search-input" type="text">
+    </div>
+</div>
+<div class="side-menu">
+    <div class="nav-tab">event</div>
+    <div class="nav-tab active">Gillade</div>
+    <div class="nav-tab">Kategori</div>
+    <div class="nav-tab">inställningar</div>
 </div>

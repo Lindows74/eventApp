@@ -1,25 +1,26 @@
 /* author Nisse Löfgren */
 // Variables, fonts
-@import 'tools/var'
-@import 'tools/fonts'
-@import 'tools/fontawesome/font-awesome.min.css'
+@import 'tools/_var'
+@import 'tools/_fonts'
+@import 'tools/fontawesome/_font-awesome.min.css'
 
 //Mixins
-@import 'tools/mixins'
+@import 'tools/_mixins'
 
 //modules
-@import 'tools/modules/menubar'
-@import 'tools/modules/topbar'
-@import 'tools/modules/checkbox'
+@import 'tools/modules/_menubar'
+@import 'tools/modules/_topbar'
+@import 'tools/modules/_checkbox'
+@import 'tools/modules/_hamburger'
 
 
 //Views
-@import 'views/_main.sass'
-@import 'views/_search.sass'
-@import 'views/_favorites.sass'
-@import 'views/_settings.sass'
-@import 'views/_company.sass'
-@import 'views/_feeditem.sass'
+@import 'views/_main'
+@import 'views/_search'
+@import 'views/_favorites'
+@import 'views/_settings'
+@import 'views/_company'
+@import 'views/_feeditem'
 
 p 
 	margin: 0
@@ -30,9 +31,8 @@ a
 
 .pane
 	// background: radial-gradient(at center bottom,     #181d28, #181d29)
-	background: 
-		image: url('../img/contentBg.jpg')
-		size: cover
+	background: $white-bg
+    
 
 
 ::-webkit-scrollbar 
