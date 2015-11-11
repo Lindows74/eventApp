@@ -56,6 +56,6 @@ var app = angular.module('starter', ['ionic'])
     controller: 'feeditemCtrl'
   });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/search');
 
 });
