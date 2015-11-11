@@ -22,6 +22,9 @@ coverage
 # config.codekit
 config.codekit
 
+# sass-cache
+.sass-cache
+
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 

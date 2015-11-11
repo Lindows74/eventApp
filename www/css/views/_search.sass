@@ -1,88 +1,54 @@
-/* author Nisse Löfgren */
-.feed
-	.date-search-wrapper
-		width: 90%
-		+flex(space-between)
-		margin: 20px auto
-
-		.date-btn
-			width: 70px
-			height: 20px
-			border: 1px solid white 
-			border-radius: 20px
-			+standard(10px)
-			color: white
-			+flex(center)
-			text-transform: uppercase
-
-		.date-active
-			background: rgba(255,255,255,0.3)
-
-
-
-	.search-wrapper
-		+flex(center)
-		padding-top: 20px
-		color: $light-blue
-		font-size: 30px
-
-		input 
-			width: 70%
-			background: transparent
-			border-bottom: 1px solid rgba(34,34,34,0.4)
-			color: $dark
-            +standard(18px)
-			padding-left: 20px
-			margin-left: 20px
-			
-
-			&::-webkit-input-placeholder 
-				color: $dark
-                +standard(18px)
-				text-transform: capitalize
-
-
-	ul
-		width: 98%
-		display: block
-		margin: 20px auto 
-
-		li 
-			position: relative
-			display: block
-			text-transform: capitalize
-			padding: 10px 15px
-			+flex(space-between)
-            
-
-			span
-				position: absolute
-				top: 0
-				left: 0
-				width: 3px 
-				height: 100%
-				background: pink
-
+.search-wrapper
+    +flex(center)
+    padding-top: 20%
+    color: $dark
+    font-size: 30px
+    
+    input
+        width: 70%
+        background: transparent
+        border-bottom: 1px solid rgba(34,34,34,0.4)
+        color: $dark
+        +standard(18px)
+        padding-left: 20px
+        margin-left: 20px
         
-    			.search-title
-                    +standard(22px)
-                    color: $dark
-
-			    .search-desc
-				    color: $dark
+    &::-webkit-input-placeholder
+        color: $dark
+        +standard(18px)
+        text-transform: capitalize
+    
+ul
+    width: 100%
+    display: block
+    margin: 20px auto
+    
+    li
+        text-transform: capitalize
+        padding: 10px 15px
+        +flex(space-between)
+        
+        span
+            position: absolute
+            top: 0
+            left: 0
+            width: 3px
+            height: 100%
+            background: pink
             
-
-			.search-desc-date
-				color: $dark
-
-		
+            .search-title
+                +standard(22px)
+                color: $dark
+                
+            .search-desc
+                color: $dark
+                
+        .search-desc-date
+            color: $dark
+            
+        
 .odd
     background: #fff
 
 .even
-    background: #white-bg
-
-
-
-
-
+    background: $white-bg
