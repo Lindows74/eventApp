@@ -12,6 +12,8 @@ app.controller('settingsCtrl', ['$scope', '$http', 'cities', 'geo', 'feedFact',f
     
     $scope.likes = feedFact.getLikes().length;
     
+    console.log($scope.likes);
+    
     $scope.cities = cities;
     
     
