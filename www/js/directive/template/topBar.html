@@ -15,12 +15,13 @@
 	    <div class="search-icon">
 	        <img src="../../../img/icons/search.svg" alt="">
 	    </div>
-	    <input class="search-input" type="text" placeholder="Sök" ng-model="query" ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
+	    <input class="search-input" type="search" placeholder="Sök" ng-model="query" ng-focus="menuAction('hide')" ng-blur="menuAction('show')">
     </div>
 </div>
 <div class="side-menu">
-    <div class="nav-tab">event</div>
-    <div class="nav-tab active">Gillade</div>
-    <div class="nav-tab">Kategori</div>
-    <div class="nav-tab">inställningar</div>
+    <div class="nav-tab"> <i class="fa fa-list"></i> event</div>
+    <div class="nav-tab active"><i class="fa fa-heart"></i>Gillade</div>
+    <div class="nav-tab"><i class="fa fa-tags"></i>Kategori</div>
+    <div class="nav-tab"><i class="fa fa-cogs"></i>inställningar</div>
 </div>
+<div ng-init="init()"></div>

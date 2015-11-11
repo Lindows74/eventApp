@@ -7,11 +7,12 @@
         <li ng-repeat="item in feed | filter: query"  ng-class-odd="'odd'" ng-class-even="'even'">
             <a ng-href="#/feeditem/{{item.title}}/{{page}}">
                 <span></span>
+                <div class="org-img"><img ng-src="{{item.img}}" alt=""></div>
                 <div class="search-desc-wrapper">
                     <div class="search-title">{{ item.title }}</div>
                     <div class="search-desc">{{ item.company }}</div>
                 </div>
-                <div class="search-desc-date">{{ item.date }}</div>
+                <div class="search-desc-date"><i class="fa fa-calendar-o"></i>{{ item.date }}</div>
             </a>
         </li>
     </ul>
