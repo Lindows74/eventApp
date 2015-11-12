@@ -2,22 +2,23 @@
 <topbar></topbar>
 
 <div class="feed">
+   
+        <div ng-hide="favorites.length > 0" class="bg-placeholder"><p>Du har inga gillade events</p></div>
+   
+        <ul>
+            <li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')" ng-class-odd="'odd'" ng-class-even="'even'">
+                 <a ng-href="#/feeditem/{{item.title}}/{{page}}">
+                <span></span>
+                <div class="org-img"><img ng-src="{{item.img}}" alt=""></div>
+                <div class="search-desc-wrapper">
+                    <div class="search-title">{{ item.title }}</div>
+                    <div class="search-desc">{{ item.company }}</div>
+                </div>
+                <div class="search-desc-date"><i class="fa fa-calendar-o"></i>{{ item.date }}</div>
+            </a>
+        </li>
+    </ul>
 
-	<div ng-hide="favorites.length > 0" class="bg-placeholder"><p>Du har inga gillade events</p></div>
-
-<ul>
-	<li ng-repeat="item in favorites" on-swipe-left="delMenu($index, 'open')" on-swipe-right="delMenu($index, 'close')">
-		<span></span>
-		<div class="search-desc-wrapper">
-			<a ng-href="#/feeditem/{{item.title}}/{{page}}">
-				<div class="search-title">{{ item.title }}</div>
-				<div class="search-desc">{{ item.company }}</div>
-			</a>
-		</div>
-		<div class="search-desc-date">{{ item.date }}</div>
-		<div ng-click="delItem($index)" ng-class="(favorites[$index].delmenu) ? 'delete-tab-open' : 'delete-tab-close'"><i class="fa fa-trash-o"></i></div>
-	</li>
-</ul>
 </div>
 
-<navmenu></navmenu>
+

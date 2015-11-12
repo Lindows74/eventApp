@@ -2,33 +2,50 @@
 <topbar></topbar>
 
 <div class="feed">
-	<div class="item-wrapper">
-		<div class="image-item">
+
+	<div class="event-card">
+		<div class="card-img-wrapper">
 			<img ng-src="{{info.img}}" on-double-tap="likePost($index)">
 
 		</div>
-		<div class="text-item">
+		<div class="card-text-box">
 
-			<div id="text-item-header">
+			<div class="card-first-row">
 
-				<div id="title">{{info.title| limitTo: 25 }}{{info.title.length>25 ?"...": ""}}</div>
+				<div class="card-title">{{info.title| limitTo: 25 }}{{info.title.length>25 ?"...": ""}}</div>
 				
-				<div id="likes" ng-click="likePost($index)">
+				<div class="card-like" ng-click="likePost($index)">
 					<span ng-if="info.likes">{{info.likes}}</span>
 					<i class="fa fa-heart-o" ng-class=" (info.likes > 0) ? 'active' : ''"></i> 
 				</div>
 
 			</div>
-			<div id="desc">{{info.description}}</div>
-			<div id="text-item-footer">
-				
-				<div id="place-desc"><a style="color: #35c8dc;" ng-href="#/company/{{info.company}}/{{page}}">{{info.company}}</a></div>
-				<div id="date">{{info.date}}</div>
-
-			</div>
+			<div class="card-desc">{{info.description}}</div>
+			 <div class="card-location-time-wrapp">
+               <div class="card-location">
+                   <div class="loc-icon">
+                       <i class="fa fa-map-marker"></i>
+                       </div>
+                   <div class="loc-adress-wrapp">
+                       <div class="loc-adress">Filipgatan 2</div>
+                       <div class="loc-zip">37434  karlshamn</div>
+                   </div>
+               </div>
+               <div class="card-time">
+                  <div class="loc-icon">
+                       <i class="fa fa-clock-o"></i>
+                       </div>
+                   <div class="loc-time-wrapp">
+                       <div class="loc-date">{{item.date}}</div>
+                       <div class="loc-time">18:00</div>
+                   </div>
+               </div>
+           </div>
+			<div class="card-company-name"><a ng-href="#/company/{{item.company}}/{{page}}">
+               {{info.company}}
+               </a>
+           </div>
 
 		</div>
 	</div>
 </div>
-
-<navmenu></navmenu>
