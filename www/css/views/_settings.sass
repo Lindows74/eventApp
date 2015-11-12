@@ -11,7 +11,7 @@
             top: -1%
             left: -1%
             width: 100%
-            height: 100%
+            height: 60%
             background: pink
             z-index: -1
             img
@@ -52,9 +52,11 @@
                     color: #fff
                     margin: 0
                     padding: 0
+                    text-shadow: 0 2px 2px rgba(0,0,0,0.2)
                 p
                     +standard(16px)
                     color: #fff
+                    text-shadow: 0 2px 2px rgba(0,0,0,0.2)
             
 
             
@@ -63,15 +65,18 @@
         .settings-text-box
             width: 100%
             height: 48%
+            background: #fff
+            padding-top: 20px
             
             
             .settings-tab
                 width: 100%
                 height: 60px
-                color: #fff
+                color: $dark
                 +flex(space-around)
                 padding: 0 15px
                 box-sizing: border-box
+                
                 
             
                 .settings-left, .settings-right
@@ -81,7 +86,8 @@
                     text-transform: capitalize
                     
                 .settings-left
-                    +flex(flex-start)    
+                    +flex(flex-start)
+                    
                 
                         
                 .settings-right
@@ -92,29 +98,53 @@
                     border: none
                     +standard(18px)
                     text-transform: capitalize
-                    color: #fff
+                    color: $dark
                     -webkit-appearance: none
 
                 i 
                     font-size: 16px
-                    margin-left: 10px
+                    margin-left: 5px
                     
             hr
                 width: 82%
                 height: 1px
                 margin: 0 auto
-                padding: 0
                 border: none
-                background: rgba(255,255,255,0.6)
-
+                background: rgba(34,34,34,0.3)
+                    
 
             .sign-out-btn
+                position: absolute
                 width: 100%
                 height: 60px
+                cursor: pointer
                 +flex(center)
+                bottom: 0
+                left: 0
                 +standard(22px)
-                color: #fff
+                color: $dark
+                
+                span
+                    padding: 10px 40px
+                    border: 1px solid $dark
+                    border-radius: 5px
 
+                
+            @media screen and(max-height: 570px)
+                .settings-tab
+                    height: 40px
+                    .settings-left, .settings-right
+                        +standard(14px)
+                      
+                    select
+                        +standard(14px)
+                    i 
+                        font-size: 14px
+                        
+                        
+        @media screen and(max-height: 480px)
+            .settings-text-box
+                padding-top: 0
 
 
 

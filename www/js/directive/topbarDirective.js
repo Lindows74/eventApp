@@ -8,20 +8,20 @@ app.directive('topbar', function() {
           $scope.location = data;
         });
         $scope.init = function(){
+            
+            //Sidebar slide
            $('.menu-btn').click(function(){
-               
             if($('.side-menu').css("left") == "-150px"){
-
 			 $('.side-menu').css("left", "0px");
-
 		    }else{
-
 			 $('.side-menu').css("left", "-150px");
-
-		    }
-               
-               
-           }) 
+		    } 
+           })
+           
+           //Search input slide
+           $('.search-icon').click(function(){
+               $('.search-input').slideToggle();
+           })
         }
     }],
     templateUrl: 'js/directive/template/topBar.html'

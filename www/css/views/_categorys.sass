@@ -1,0 +1,53 @@
+.feed
+    .categories-wrapper
+        width: 100%
+        margin: 0 auto 30px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        padding: 4%
+        
+        .category-box
+            position: relative
+            width: 172px
+            height: 172px
+            margin-bottom: 15px
+            border: 1px solid rgba(0,0,0,0.3)
+            box-sizing: border-box
+            +standard(16px)
+            color: #fff
+            +flex(center)
+            
+            .box-img-wrapper
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: -1
+                img
+                    width: 100%
+                    height: 100%
+                    z-index: 1
+            p
+                +standard(30px)
+                color: #fff
+                
+            
+        @media screen and(max-width: 380px)
+            .category-box
+                width: 160px
+                height: 160px
+                margin-bottom: 12px
+                
+        @media screen and(max-width: 360px)
+            .category-box
+                margin-bottom: 8px
+                
+        @media screen and(max-width: 340px)
+            .category-box
+                width: 140px
+                height: 140px
+                margin-bottom: 8px
+                
+    

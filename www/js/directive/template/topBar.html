@@ -19,9 +19,38 @@
     </div>
 </div>
 <div class="side-menu">
-    <div class="nav-tab"> <i class="fa fa-list"></i> event</div>
-    <div class="nav-tab active"><i class="fa fa-heart"></i>Gillade</div>
-    <div class="nav-tab"><i class="fa fa-tags"></i>Kategori</div>
-    <div class="nav-tab"><i class="fa fa-cogs"></i>inställningar</div>
+   
+<!-- Feed view  -->
+    <a ng-href="#/">
+        <div class="nav-tab" ng-class=" (page === 'home') ? 'active' : ''"> 
+            <i class="fa fa-list"></i> 
+            event
+        </div>
+    </a>
+    
+<!-- Favorites view  -->
+    <a ng-href="#/favorites">
+        <div class="nav-tab" ng-class=" (page === 'favorites') ? 'active' : ''">
+            <i class="fa fa-heart"></i>
+            Gillade
+        </div>
+    </a>
+    
+<!-- Categories view  -->
+    <a ng-href="#/categorys">
+        <div class="nav-tab" ng-class=" (page === 'categorys') ? 'active' : ''">
+            <i class="fa fa-tags"></i>
+            Kategori
+        </div>
+    </a>
+    
+<!-- Settings view  -->    
+    <a ng-href="#/settings">
+        <div class="nav-tab" ng-class=" (page === 'settings') ? 'active' : ''">
+            <i class="fa fa-cogs"></i>
+            inställningar
+        </div>
+    </a>
+    
 </div>
 <div ng-init="init()"></div>

@@ -3,6 +3,55 @@
 <div ng-init="init()"></div>
 
     <div class="settings-wrapper">
+<!--
+      <div class="outlogged-bg">
+          <img src="../img/settings-bg.jpg" alt="">
+      </div>
+      
+      <div class="settings-content-text">
+          
+          <div class="settings-info-box">
+              <h2>Facebook</h2>
+              <hr>
+              <p>Logga in med facebook för att kunna
+gilla event, hitta dina gillade event 
+och följa företag / organisationer</p>
+          </div>
+          
+          <i>eller</i>
+          
+          <div class="outlogged-text-box">
+            
+            <div class="settings-tab">
+                <div class="settings-left">stad</div>
+                <div class="settings-right">
+                    <select ng-if="locationServices">
+				        <option value="{{ location }}"> {{ location }}</option>
+					</select>
+					<select ng-if="!locationServices">
+				        <option ng-repeat="city in cities" value="{{ city }}"> {{ city }}</option>
+					</select>
+               </div>
+            </div>
+            
+        
+            <div class="settings-tab">
+                 <div class="settings-left">Platstjänster</div>
+                <div class="settings-right"><div class="slideThree">  
+				    <input ng-if="locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check" checked/>
+					<input ng-if="!locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check"/>
+				    <label for="slideThree"></label>
+				    </div></div>
+            </div>
+          </div>
+          
+          
+      </div>
+      
+      <div class="fb-in-btn" ng-click="signOut()">
+          <i class="fa fa-facebook"></i> Logga in med facebook
+      </div>
+-->
        
         <div class="img-bg">
                <img src="https://scontent-arn2-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12143211_1107611825930529_3532220791307561522_n.jpg?oh=dee1f454004e7b2e82b8c64989a3cffc&oe=56F00D06" alt="">
@@ -37,7 +86,11 @@
             
             <div class="settings-tab">
                  <div class="settings-left">Platstjänster</div>
-                <div class="settings-right">PÅ</div>
+                <div class="settings-right"><div class="slideThree">  
+				    <input ng-if="locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check" checked/>
+					<input ng-if="!locationServices" ng-click="setLocationService()" type="checkbox" id="slideThree" name="check"/>
+				    <label for="slideThree"></label>
+				    </div></div>
             </div>
             
             <hr>
@@ -48,8 +101,8 @@
             </div>
             
             
-            <div class="sign-out-btn">
-                Logga ut
+            <div class="sign-out-btn" ng-click="signOut()">
+                <span>Logga ut</span>
             </div>
         </div>
     </div>

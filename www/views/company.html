@@ -4,28 +4,37 @@
 <div class="feed">
 	
 	<div class="info-box">
-		<div class="company-title">{{ title }}</div>
+		<div class="company-title">{{title}}</div>
 		<div class="company-desc">{{ info.description }}</div>
 		<span></span>
+    
 		<div class="company-details">
-			<table>
-				<tr>
-					<td>Telefon: </td>
-					<td> {{ info.phoneNr }}</td>
-				</tr>
-				<tr>
-					<td>Email: </td>
-					<td> {{ info.email }}</td>
-				</tr>
-				<tr>
-					<td>Adress: </td>
-					<td> {{ info.adress }} <br>{{ info.zipcode }}</td>
-				</tr>
-			</table>
+		    <div class="details-tab">
+                <div class="details-icon">
+		           <i class="fa fa-mobile"></i>
+                </div>
+                <p class="nrstyle">{{ info.phoneNr }}</p>
+		    </div>
+		    <div class="details-tab">
+               <div class="details-icon">
+		           <i class="fa fa-envelope-o"></i>
+		       </div>
+		       <p class="nrstyle">{{ info.email }}</p>
+		    </div>
+		    <div class="details-tab">
+                <div class="details-icon">
+		            <i class="fa fa-map-marker"></i>
+                </div>
+                <p class="nrstyle">{{ info.adress }}, <br> {{ info.zipcode }}</p>
+		    </div>
+		    
+	
 		</div>
 	</div>
 
 </div>
 
 
-<navmenu></navmenu>
+
+
+

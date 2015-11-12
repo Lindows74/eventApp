@@ -1,87 +1,71 @@
 /* author Nisse Löfgren */
-.info-box
-	+flex(center)
-	flex-direction: column
-	position: relative
-	+standard(14px)
-	color: white
-	width: 95%
-	height: 84%
-	padding: 0 20px
-	margin: 10% auto
-	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3)
-	border-top: 2px solid rgba(91,103,123,0.4)
+.feed
 
-	.company-title
-		+title()
-		width: 80%
-		+flex(center)
-		margin-bottom: 30px
+    .info-box
+        +flex(center)
+        flex-direction: column
+        +standard(14px)
+        color: $dark
+        background: #fff
+        width: 95%
+        height: 100%
+        margin: 0 auto
 
-	.company-desc
-		width: 80%
-		+flex(center)
-		+standard(14px)
+        .company-title
+            +standard(32px)
+            width: 100%
+            +flex(center)
+            margin-bottom: 30px
 
-	span 
-		position: relative
-		width: 80%
-		margin: 40px 0 20px
-		height: 1px 
-		background: $light-blue
+        .company-desc
+            width: 70%
+            +standard(12px)
+            +flex(center)
+            color: $dark
 
-
-	.company-details
-		width: 80%
-		padding: 20px 0
-		+flex(center)
-		+standard(14px)
+        span 
+            position: relative
+            width: 80%
+            margin: 20px 0 10px
+            height: 1px 
+            background: $light-blue
 
 
-		table
-			width: 80%
-			tr 
-				margin-bottom: 20px 
+        .company-details
+            width: 80%
+            padding: 20px 0
+            +flex(flex-start)
+            flex-direction: column
+            +standard(14px)
+
+            .details-tab
+                +standard(18px)
+                width: 100%
+                height: 40px
+                +flex(flex-start)
+                margin-bottom: 30px
+                    
+                .details-icon
+                    width: 30px
+                    height: 30px
+                    +flex(center)
+                    margin-right: 20px
+                    
+                    i
+                        font-size: 35px
+            
+            @media screen and(max-height: 570px)
+                .details-tab
+                    +standard(14px)
+                    .details-icon
+                        margin-right: 10px
+                        i
+                            font-size: 25px
+                    
+                
+               
+                    
+                    
+            
 
 
-				td 
-					margin-right: 10px
-
-
-	@media (max-height: 600px)
-
-		.company-title
-			position: relative
-			top: 10%
-
-		.company-desc
-			font-size: 12px
-			margin-top: 5%
-
-		span 
-			margin: 15px 0 5px
-
-
-		.company-details
-			font-size: 12px
-
-
-
-
-.back-btn
-	width: 100%
-	height: 15%
-	+flex(center)
-	+title()
-	font-size: 24px
-	letter-spacing: 5px
-	color: white
-
-	span 
-		width: 10px
-		height: 10px
-		margin: -12px 20px 0
-
-		img 
-			width: 100%
-			height: auto

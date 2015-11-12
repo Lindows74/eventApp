@@ -31,6 +31,11 @@ var app = angular.module('starter', ['ionic'])
     templateUrl: 'views/favorites.html',
     controller: 'favoritesCtrl'
   })
+  .state('categorys', {
+    url: '/categorys',
+    templateUrl: 'views/categorys.html',
+    controller: 'categorysCtrl'
+  })
   .state('settings', {
     url: '/settings',
     templateUrl: 'views/settings.html',
@@ -56,6 +61,6 @@ var app = angular.module('starter', ['ionic'])
     controller: 'feeditemCtrl'
   });
 
-  $urlRouterProvider.otherwise('/settings');
+  $urlRouterProvider.otherwise('/categorys');
 
 });

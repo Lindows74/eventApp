@@ -135,15 +135,15 @@
         width: 100%;
         height: 100%; }
     .topbar .topbar-icon-wrapper .search-input {
-      border-radius: 4px;
-      border: 1px solid #adadad;
-      width: 120px;
+      border-bottom: 1px solid #000;
+      width: 100px;
       height: 25px;
+      background: none;
       margin-left: 5px;
-      -webkit-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
+      -webkit-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
       padding: 0 10px;
-      /*display: none */ }
+      display: none; }
 
 .side-menu {
   position: fixed;
@@ -156,6 +156,9 @@
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   border-right: 1px solid #c7c6c6; }
+  .side-menu a {
+    text-decoration: none;
+    color: #222222; }
   .side-menu .nav-tab {
     width: 100%;
     height: 40px;
@@ -183,8 +186,59 @@
       margin-right: 10px;
       font-size: 10px; }
   .side-menu .active {
-    background: #fff; }
+    background: #fff;
+    color: #222222; }
 
+/* author Nisse Löfgren */
+/* .slideThree */
+.slideThree {
+  width: 60px;
+  height: 16px;
+  background: #333;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2); }
+  .slideThree:after {
+    content: 'AV';
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 0;
+    font: 10px/14px Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15); }
+  .slideThree:before {
+    content: 'PÅ';
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    z-index: 0;
+    font: 10px/14px Arial, sans-serif;
+    font-weight: bold; }
+  .slideThree label {
+    display: block;
+    width: 35px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fcfff4;
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3); }
+  .slideThree input[type=checkbox] {
+    visibility: hidden; }
+    .slideThree input[type=checkbox]:checked + label {
+      left: 25px; }
+
+/* end .slideThree */
 .first, .second, .third {
   width: 100%;
   height: 1px;
@@ -703,7 +757,7 @@ ul {
     top: -1%;
     left: -1%;
     width: 100%;
-    height: 100%;
+    height: 60%;
     background: pink;
     z-index: -1; }
     .pane .settings-wrapper .img-bg img {
@@ -781,19 +835,23 @@ ul {
         font-size: 22px;
         color: #fff;
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
       .pane .settings-wrapper .settings-img .profile-info p {
         font-family: 'proxima';
         font-weight: 300;
         font-size: 16px;
-        color: #fff; }
+        color: #fff;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
   .pane .settings-wrapper .settings-text-box {
     width: 100%;
-    height: 48%; }
+    height: 48%;
+    background: #fff;
+    padding-top: 20px; }
     .pane .settings-wrapper .settings-text-box .settings-tab {
       width: 100%;
       height: 60px;
-      color: #fff;
+      color: #222222;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -847,21 +905,22 @@ ul {
         font-weight: 300;
         font-size: 18px;
         text-transform: capitalize;
-        color: #fff;
+        color: #222222;
         -webkit-appearance: none; }
       .pane .settings-wrapper .settings-text-box .settings-tab i {
         font-size: 16px;
-        margin-left: 10px; }
+        margin-left: 5px; }
     .pane .settings-wrapper .settings-text-box hr {
       width: 82%;
       height: 1px;
       margin: 0 auto;
-      padding: 0;
       border: none;
-      background: rgba(255, 255, 255, 0.6); }
+      background: rgba(34, 34, 34, 0.3); }
     .pane .settings-wrapper .settings-text-box .sign-out-btn {
+      position: absolute;
       width: 100%;
       height: 60px;
+      cursor: pointer;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -874,13 +933,210 @@ ul {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
+      bottom: 0;
+      left: 0;
       font-family: 'proxima';
       font-weight: 300;
       font-size: 22px;
-      color: #fff; }
+      color: #222222; }
+      .pane .settings-wrapper .settings-text-box .sign-out-btn span {
+        padding: 10px 40px;
+        border: 1px solid #222222;
+        border-radius: 5px; }
+    @media screen and (max-height: 570px) {
+      .pane .settings-wrapper .settings-text-box .settings-tab {
+        height: 40px; }
+        .pane .settings-wrapper .settings-text-box .settings-tab .settings-left, .pane .settings-wrapper .settings-text-box .settings-tab .settings-right {
+          font-family: 'proxima';
+          font-weight: 300;
+          font-size: 14px; }
+        .pane .settings-wrapper .settings-text-box .settings-tab select {
+          font-family: 'proxima';
+          font-weight: 300;
+          font-size: 14px; }
+        .pane .settings-wrapper .settings-text-box .settings-tab i {
+          font-size: 14px; } }
+  @media screen and (max-height: 480px) {
+    .pane .settings-wrapper .settings-text-box {
+      padding-top: 0; } }
+
+.settings-wrapper .outlogged-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: pink;
+  z-index: -1; }
+  .settings-wrapper .outlogged-bg img {
+    width: 100%;
+    height: 100%; }
+
+.settings-wrapper .settings-content-text {
+  width: 85%;
+  height: calc(100% - 95px);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .settings-wrapper .settings-content-text .settings-info-box {
+    width: 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .settings-wrapper .settings-content-text .settings-info-box h2 {
+      font-family: 'proxima';
+      font-weight: 300;
+      font-size: 42px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); }
+    .settings-wrapper .settings-content-text .settings-info-box hr {
+      width: 88%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      border: none;
+      margin: 5px 0;
+      padding: 0; }
+    .settings-wrapper .settings-content-text .settings-info-box p {
+      padding: 0 10px;
+      font-family: 'proxima';
+      font-weight: 300;
+      font-size: 10px;
+      color: #fff;
+      text-align: center; }
+  .settings-wrapper .settings-content-text i {
+    margin: 30px 0;
+    font-family: 'proxima';
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff; }
+  .settings-wrapper .settings-content-text .outlogged-text-box {
+    width: 85%; }
+    .settings-wrapper .settings-content-text .outlogged-text-box .settings-tab {
+      width: 100%;
+      height: 60px;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 15px;
+      box-sizing: border-box; }
+      .settings-wrapper .settings-content-text .outlogged-text-box .settings-tab .settings-left, .settings-wrapper .settings-content-text .outlogged-text-box .settings-tab .settings-right {
+        width: 40%;
+        height: 100%;
+        font-family: 'proxima';
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: capitalize; }
+      .settings-wrapper .settings-content-text .outlogged-text-box .settings-tab .settings-left {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+      .settings-wrapper .settings-content-text .outlogged-text-box .settings-tab .settings-right {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+      .settings-wrapper .settings-content-text .outlogged-text-box .settings-tab select {
+        background: transparent;
+        border: none;
+        font-family: 'proxima';
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff; }
+
+.settings-wrapper .fb-in-btn {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  background: #3d589f;
+  padding: 0 30px;
+  font-family: 'proxima';
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff; }
 
 /* author Nisse Löfgren */
-.info-box {
+.feed .info-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -898,23 +1154,19 @@ ul {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   font-family: 'proxima';
   font-weight: 300;
   font-size: 14px;
-  color: white;
+  color: #222222;
+  background: #fff;
   width: 95%;
-  height: 84%;
-  padding: 0 20px;
-  margin: 10% auto;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  border-top: 2px solid rgba(91, 103, 123, 0.4); }
-  .info-box .company-title {
+  height: 100%;
+  margin: 0 auto; }
+  .feed .info-box .company-title {
     font-family: 'proxima';
     font-weight: 300;
-    font-size: 20px;
-    text-transform: uppercase;
-    width: 80%;
+    font-size: 32px;
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -928,8 +1180,11 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 30px; }
-  .info-box .company-desc {
-    width: 80%;
+  .feed .info-box .company-desc {
+    width: 70%;
+    font-family: 'proxima';
+    font-weight: 300;
+    font-size: 12px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -942,22 +1197,112 @@ ul {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: 'proxima';
-    font-weight: 300;
-    font-size: 14px; }
-  .info-box span {
+    color: #222222; }
+  .feed .info-box span {
     position: relative;
     width: 80%;
-    margin: 40px 0 20px;
+    margin: 20px 0 10px;
     height: 1px;
     background: #5b677b; }
-  .info-box .company-details {
+  .feed .info-box .company-details {
     width: 80%;
     padding: 20px 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'proxima';
+    font-weight: 300;
+    font-size: 14px; }
+    .feed .info-box .company-details .details-tab {
+      font-family: 'proxima';
+      font-weight: 300;
+      font-size: 18px;
+      width: 100%;
+      height: 40px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 30px; }
+      .feed .info-box .company-details .details-tab .details-icon {
+        width: 30px;
+        height: 30px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 20px; }
+        .feed .info-box .company-details .details-tab .details-icon i {
+          font-size: 35px; }
+    @media screen and (max-height: 570px) {
+      .feed .info-box .company-details .details-tab {
+        font-family: 'proxima';
+        font-weight: 300;
+        font-size: 14px; }
+        .feed .info-box .company-details .details-tab .details-icon {
+          margin-right: 10px; }
+          .feed .info-box .company-details .details-tab .details-icon i {
+            font-size: 25px; } }
+
+.feed .categories-wrapper {
+  width: 100%;
+  margin: 0 auto 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 4%; }
+  .feed .categories-wrapper .category-box {
+    position: relative;
+    width: 172px;
+    height: 172px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-family: 'proxima';
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -965,57 +1310,36 @@ ul {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    font-family: 'proxima';
-    font-weight: 300;
-    font-size: 14px; }
-    .info-box .company-details table {
-      width: 80%; }
-      .info-box .company-details table tr {
-        margin-bottom: 20px; }
-        .info-box .company-details table tr td {
-          margin-right: 10px; }
-  @media (max-height: 600px) {
-    .info-box .company-title {
-      position: relative;
-      top: 10%; }
-    .info-box .company-desc {
-      font-size: 12px;
-      margin-top: 5%; }
-    .info-box span {
-      margin: 15px 0 5px; }
-    .info-box .company-details {
-      font-size: 12px; } }
-
-.back-btn {
-  width: 100%;
-  height: 15%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'proxima';
-  font-weight: 300;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-size: 24px;
-  letter-spacing: 5px;
-  color: white; }
-  .back-btn span {
-    width: 10px;
-    height: 10px;
-    margin: -12px 20px 0; }
-    .back-btn span img {
+            align-items: center; }
+    .feed .categories-wrapper .category-box .box-img-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: auto; }
+      height: 100%;
+      z-index: -1; }
+      .feed .categories-wrapper .category-box .box-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        z-index: 1; }
+    .feed .categories-wrapper .category-box p {
+      font-family: 'proxima';
+      font-weight: 300;
+      font-size: 30px;
+      color: #fff; }
+  @media screen and (max-width: 380px) {
+    .feed .categories-wrapper .category-box {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 12px; } }
+  @media screen and (max-width: 360px) {
+    .feed .categories-wrapper .category-box {
+      margin-bottom: 8px; } }
+  @media screen and (max-width: 340px) {
+    .feed .categories-wrapper .category-box {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 8px; } }
 
 /* author Nisse Löfgren */
 p {

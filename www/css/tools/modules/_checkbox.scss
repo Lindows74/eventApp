@@ -9,7 +9,7 @@
   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
   &:after {
     content: 'AV';
-    color: #000;
+    color: #fff;
     position: absolute;
     right: 5px;
     top: 2px;
@@ -20,7 +20,7 @@
   }
   &:before {
     content: 'PÅ';
-    color: $blue;
+    color: #fff;
     position: absolute;
     left: 5px;
     top: 2px;
