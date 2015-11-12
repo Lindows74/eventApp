@@ -11,10 +11,10 @@ app.directive('topbar', function() {
             
             //Sidebar slide
            $('.menu-btn').click(function(){
-            if($('.side-menu').css("left") == "-150px"){
+            if($('.side-menu').css("left") == "-200px"){
 			 $('.side-menu').css("left", "0px");
 		    }else{
-			 $('.side-menu').css("left", "-150px");
+			 $('.side-menu').css("left", "-200px");
 		    } 
            })
            

@@ -78,7 +78,7 @@
 /* author Nisse Löfgren */
 .topbar {
   width: 100%;
-  height: 35px;
+  height: 50px;
   background: #ececec;
   display: -webkit-box;
   display: -webkit-flex;
@@ -94,8 +94,8 @@
           align-items: center;
   letter-spacing: 3px; }
   .topbar .menu-btn {
-    width: 20px;
-    height: 15px;
+    width: 30px;
+    height: 25px;
     margin: 0 15px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -128,9 +128,11 @@
     font-size: 20px; }
     .topbar .topbar-icon-wrapper .thumb-icon {
       margin-right: 30px; }
+      .topbar .topbar-icon-wrapper .thumb-icon i {
+        font-size: 25px; }
     .topbar .topbar-icon-wrapper .search-icon {
-      width: 20px;
-      height: 20px; }
+      width: 25px;
+      height: 25px; }
       .topbar .topbar-icon-wrapper .search-icon img {
         width: 100%;
         height: 100%; }
@@ -147,9 +149,9 @@
 
 .side-menu {
   position: fixed;
-  left: -150px;
-  top: 35px;
-  width: 150px;
+  left: -200px;
+  top: 50px;
+  width: 200px;
   height: 100%;
   background: #ececec;
   z-index: 99;
@@ -161,7 +163,7 @@
     color: #222222; }
   .side-menu .nav-tab {
     width: 100%;
-    height: 40px;
+    height: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -177,14 +179,14 @@
     padding-left: 20px;
     font-family: 'proxima';
     font-weight: 300;
-    font-size: 14px;
+    font-size: 20px;
     margin: 0 auto;
     box-sizing: border-box;
     text-transform: capitalize; }
     .side-menu .nav-tab i {
       color: #808080;
-      margin-right: 10px;
-      font-size: 10px; }
+      margin-right: 20px;
+      font-size: 16px; }
   .side-menu .active {
     background: #fff;
     color: #222222; }
