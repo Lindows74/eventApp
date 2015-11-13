@@ -304,7 +304,7 @@
   .feed .event-card {
     position: relative;
     width: 100%;
-    height: 94vh;
+    height: 93vh;
     background: #000;
     margin-bottom: 20px;
     display: -webkit-box;
@@ -321,7 +321,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 94vh; }
+      height: 93vh; }
       .feed .event-card .card-img-wrapper img {
         width: 100%;
         height: 100%; }
