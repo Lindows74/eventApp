@@ -4,7 +4,8 @@
 <div class="feed">
 
 	<div class="event-card">
-	    <div class="card-company-name"><div class="card-company-name">
+		<div class="card-img-wrapper">
+		<div class="card-company-name"><div class="card-company-name">
              <div class="company-name-town-wrapper">
                   <a ng-href="#/company/{{info.company}}/{{page}}">
                    {{info.company}}
@@ -13,12 +14,11 @@
                        karlshamn
                    </div>
                </div>
-               <div class="more-icon">
+               <div class="more-icon" style="margin-right: 20px">
                    <img src="img/icons/more-icon.svg" alt="">
                </div>
            </div>
            </div>
-		<div class="card-img-wrapper">
 			<img ng-src="{{info.img}}" on-double-tap="likePost($index)">
 
 		</div>
@@ -55,20 +55,7 @@
                    </div>
                </div>
            </div>
-			<div class="card-company-name"><div class="card-company-name">
-             <div class="company-name-town-wrapper">
-                  <a ng-href="#/company/{{info.company}}/{{page}}">
-                   {{info.company}}
-                   </a>
-                   <div class="event-town">
-                       karlshamn
-                   </div>
-               </div>
-               <div class="more-icon">
-                   <img src="img/icons/more-icon.svg" alt="">
-               </div>
-           </div>
-           </div>
+			
 
 		</div>
 	</div>

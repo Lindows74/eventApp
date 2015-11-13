@@ -7,7 +7,7 @@ app.factory('feedFact', function() {
                     {
                         "title": "Hårmässa",
                         "img": "https://c1.staticflickr.com/9/8300/7997573453_81c3081276_b.jpg",
-                        "description": "Årliga hårmässan går av stapeln under helgen, Karlshamns frisörer kommer ställa ut i Citygallerian",
+                        "description": "Årliga hårmässan går av stapeln under helgen, Karlshamns frisörer kommer ställa ut i Citygallerian ",
                         "likes": 0,
                         "company": "Citygallerian",
                         "date": "10-10-2015"
@@ -39,7 +39,7 @@ app.factory('feedFact', function() {
                     {
                         "title": "Musikkväll i Kyrkan",
                         "img": "http://twu.ca/academics/samc/events/2013-2014-events/poster-chamber-music-fa13.jpg",
-                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten.",
+                        "description": "En stämningsfyll kväll med våra lokala musiktallanger. vi bjuder på kaffe och bullar efter första akten. ",
                         "likes": 0,
                         "company": "Carl Gustafs Kyrkan",
                         "date": "06-06-2016"

@@ -49,7 +49,7 @@
            </div>
            
            <div class="card-desc">
-              {{item.description}}
+              {{item.description| limitTo: 140 }}{{item.description.length>140 ?"...": ""}}
            </div>
            
            <div class="card-location-time-wrapp">

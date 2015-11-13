@@ -25,5 +25,5 @@ app.controller('mainCtrl', ['$scope', 'feedFact', '$ionicPlatform', function ($s
         $scope.thumb  = !$scope.thumb;
     }
   
-
+    
 }]);
