@@ -1,0 +1,26 @@
+.modal-class
+    position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0,0,0,0.6)
+    z-index: 99
+    +flex(center)
+    flex-direction: column
+        
+    
+    
+    span
+        color: $dark
+        width: 70%
+        height: 40px
+        border: 1px solid $dark
+        background: #fff
+        +standard(14px)
+        padding: 0 20px
+        +flex(space-between)
+        &:nth-last-child(1)
+            border-top: none
+            
+        

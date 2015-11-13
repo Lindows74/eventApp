@@ -247,6 +247,56 @@
   height: 1px;
   background: #222222; }
 
+.modal-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .modal-class span {
+    color: #222222;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #222222;
+    background: #fff;
+    font-family: 'proxima';
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .modal-class span:nth-last-child(1) {
+      border-top: none; }
+
 .feed {
   width: 100%;
   height: calc(100% - 50px);
@@ -293,11 +343,12 @@
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 10px 20px;
+      padding: 10px 0 0;
       border-bottom: 1px solid rgba(34, 34, 34, 0.4); }
       .feed .event-card .card-text-box .card-first-row {
         width: 100%;
         height: 40px;
+        padding: 0 20px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -315,9 +366,8 @@
           font-weight: 300;
           font-size: 18px;
           text-transform: capitalize;
-          padding: 5px 2px;
-          box-sizing: border-box;
-          border-bottom: 1px solid rgba(34, 34, 34, 0.4); }
+          padding: 0 2px;
+          box-sizing: border-box; }
         .feed .event-card .card-text-box .card-first-row .card-like {
           font-family: 'proxima';
           font-weight: 300;
@@ -326,7 +376,7 @@
             font-size: 16px; }
       .feed .event-card .card-text-box .card-desc {
         width: 100%;
-        height: 70px;
+        height: 40px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -341,7 +391,8 @@
                 align-items: center;
         font-family: 'proxima';
         font-weight: 300;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 20px; }
       .feed .event-card .card-text-box .card-location-time-wrapp {
         display: -webkit-box;
         display: -webkit-flex;
@@ -356,7 +407,8 @@
             -ms-flex-align: center;
                 align-items: center;
         width: 100%;
-        height: 40px; }
+        height: 40px;
+        padding: 0 20px; }
         .feed .event-card .card-text-box .card-location-time-wrapp .card-location {
           width: 50%;
           height: 100%;
@@ -522,25 +574,71 @@
                   align-items: center; }
       .feed .event-card .card-text-box .card-company-name {
         width: 100%;
-        height: 20px;
+        height: 40px;
+        background: #222222;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
-                align-items: center; }
-        .feed .event-card .card-text-box .card-company-name a {
+                align-items: center;
+        padding: 0 20px; }
+        .feed .event-card .card-text-box .card-company-name .company-name-town-wrapper {
+          width: 50%;
+          height: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+          .feed .event-card .card-text-box .card-company-name .company-name-town-wrapper a {
+            font-family: 'proxima';
+            font-weight: 300;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            padding-top: 4px; }
+          .feed .event-card .card-text-box .card-company-name .company-name-town-wrapper .event-town {
+            font-family: 'proxima';
+            font-weight: 300;
+            font-size: 10px;
+            margin-top: -5px;
+            color: #fff; }
+        .feed .event-card .card-text-box .card-company-name .more-icon {
+          width: 60px;
+          height: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
           font-family: 'proxima';
           font-weight: 300;
-          font-size: 14px;
-          text-transform: uppercase;
-          color: #222222; }
+          font-size: 30px;
+          color: #fff; }
+          .feed .event-card .card-text-box .card-company-name .more-icon img {
+            width: 40%;
+            height: auto; }
 
 .thumb-wrapper {
   display: -webkit-box;

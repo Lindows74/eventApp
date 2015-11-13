@@ -34,22 +34,22 @@
             display: flex
             justify-content: space-between
             flex-direction: column
-            padding: 10px 20px
+            padding: 10px 0 0
             border-bottom: 1px solid rgba(34,34,34,0.4)
             
             
             .card-first-row
                 width: 100%
                 height: 40px
+                padding: 0 20px
                 +flex(space-between)
                 
                 
                 .card-title
                     +standard(18px)
                     text-transform: capitalize
-                    padding: 5px 2px
+                    padding: 0 2px
                     box-sizing: border-box
-                    border-bottom: 1px solid rgba(34,34,34,0.4)
                 .card-like
                     +standard(28px)
                     
@@ -58,14 +58,16 @@
                         
             .card-desc
                 width: 100%
-                height: 70px
+                height: 40px
                 +flex(center)
                 +standard(14px)
+                padding: 0 20px
                 
             .card-location-time-wrapp
                 +flex(space-between)
                 width: 100%
                 height: 40px
+                padding: 0 20px
                 
                 .card-location
                     width: 50%
@@ -120,8 +122,6 @@
                             +standard(10px)
                             +flex(flex-start)
                                 
-                                
-                        
                 .card-time
                     width: 50%
                     height: 100%
@@ -131,12 +131,37 @@
                 
             .card-company-name
                 width: 100%
-                height: 20px
-                +flex(center)
-                a
-                    +standard(14px)
-                    text-transform: uppercase
-                    color: $dark
+                height: 40px
+                background: $dark
+                +flex(space-between)
+                padding: 0 20px
+                
+                .company-name-town-wrapper
+                    width: 50%
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    flex-wrap: wrap
+                    
+                    a
+                        +standard(14px)
+                        text-transform: uppercase
+                        color: #fff
+                        padding-top: 4px
+                        
+                    .event-town
+                        +standard(10px)
+                        margin-top: -5px
+                        color: #fff
+                .more-icon
+                    width: 60px
+                    height: 100%
+                    +flex(center)
+                    +standard(30px)
+                    color: #fff
+                    img
+                        width: 40%
+                        height: auto
                     
                     
                     

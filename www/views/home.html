@@ -1,8 +1,22 @@
 <!-- author Nisse Löfgren -->
+<!--
+<div class="modal-class">
+    <span>
+        <p>Dela event</p>
+        <i class="fa fa-share"></i>
+    </span>
+    <span>
+        <p>Anmäl</p>
+        <i class="fa fa-flag"></i>
+    </span>
+</div>
+-->
+
 <topbar></topbar>
 
-<div class="feed">
 
+<div class="feed">
+    
     <div  ng-hide="thumb" ng-repeat="item in feed" class="event-card">
           <div class="card-img-wrapper">
                <img ng-src="{{item.img}}" on-double-tap="likePost($index)">
@@ -43,9 +57,18 @@
                    </div>
                </div>
            </div>
-           <div class="card-company-name"><a ng-href="#/company/{{item.company}}/{{page}}">
-               {{item.company}}
-               </a>
+           <div class="card-company-name">
+             <div class="company-name-town-wrapper">
+                  <a ng-href="#/company/{{item.company}}/{{page}}">
+                   {{item.company}}
+                   </a>
+                   <div class="event-town">
+                       karlshamn
+                   </div>
+               </div>
+               <div class="more-icon">
+                   <img src="../img/icons/more-icon.svg" alt="">
+               </div>
            </div>
        </div>
         
