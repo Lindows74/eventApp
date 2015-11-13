@@ -19,8 +19,23 @@
     
     <div  ng-hide="thumb" ng-repeat="item in feed" class="event-card">
           <div class="card-img-wrapper">
+              
+              <div class="card-company-name">
+             <div class="company-name-town-wrapper">
+                  <a ng-href="#/company/{{item.company}}/{{page}}">
+                   {{item.company}}
+                   </a>
+                   <div class="event-town">
+                       karlshamn
+                   </div>
+               </div>
+               <div class="more-icon">
+                   <img src="img/icons/more-icon.svg" alt="">
+               </div>
+           </div>
                <img ng-src="{{item.img}}" on-double-tap="likePost($index)">
            </div>
+           
         
        <div class="card-text-box">
            <div class="card-first-row">
@@ -57,19 +72,7 @@
                    </div>
                </div>
            </div>
-           <div class="card-company-name">
-             <div class="company-name-town-wrapper">
-                  <a ng-href="#/company/{{item.company}}/{{page}}">
-                   {{item.company}}
-                   </a>
-                   <div class="event-town">
-                       karlshamn
-                   </div>
-               </div>
-               <div class="more-icon">
-                   <img src="img/icons/more-icon.svg" alt="">
-               </div>
-           </div>
+           
        </div>
         
     </div>

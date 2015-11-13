@@ -325,25 +325,80 @@
       .feed .event-card .card-img-wrapper img {
         width: 100%;
         height: 100%; }
+      .feed .event-card .card-img-wrapper .card-company-name {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        background: #222222;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 20px; }
+        .feed .event-card .card-img-wrapper .card-company-name .company-name-town-wrapper {
+          width: 80%;
+          height: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+          .feed .event-card .card-img-wrapper .card-company-name .company-name-town-wrapper a {
+            font-family: 'proxima';
+            font-weight: 300;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            padding-top: 4px; }
+          .feed .event-card .card-img-wrapper .card-company-name .company-name-town-wrapper .event-town {
+            font-family: 'proxima';
+            font-weight: 300;
+            font-size: 10px;
+            margin-top: -5px;
+            color: #fff; }
+        .feed .event-card .card-img-wrapper .card-company-name .more-icon {
+          width: 60px;
+          height: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-family: 'proxima';
+          font-weight: 300;
+          font-size: 30px;
+          color: #fff; }
+          .feed .event-card .card-img-wrapper .card-company-name .more-icon img {
+            width: 40%;
+            height: auto; }
     .feed .event-card .card-text-box {
       width: 100%;
-      height: 200px;
+      height: 170px;
       background: white;
       z-index: 9;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      padding: 10px 0 0;
+      padding: 10px 0;
       border-bottom: 1px solid rgba(34, 34, 34, 0.4); }
       .feed .event-card .card-text-box .card-first-row {
         width: 100%;
@@ -375,24 +430,12 @@
           .feed .event-card .card-text-box .card-first-row .card-like span {
             font-size: 16px; }
       .feed .event-card .card-text-box .card-desc {
-        width: 100%;
-        height: 40px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
+        width: 90%;
+        height: 70px;
         font-family: 'proxima';
         font-weight: 300;
-        font-size: 14px;
-        padding: 0 20px; }
+        font-size: 12px;
+        margin: -5px 0 0 20px; }
       .feed .event-card .card-text-box .card-location-time-wrapp {
         display: -webkit-box;
         display: -webkit-flex;
@@ -408,7 +451,8 @@
                 align-items: center;
         width: 100%;
         height: 40px;
-        padding: 0 20px; }
+        padding: 5px 20px 0;
+        border-top: 1px solid rgba(34, 34, 34, 0.1); }
         .feed .event-card .card-text-box .card-location-time-wrapp .card-location {
           width: 50%;
           height: 100%;
@@ -572,73 +616,6 @@
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center; }
-      .feed .event-card .card-text-box .card-company-name {
-        width: 100%;
-        height: 40px;
-        background: #222222;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        padding: 0 20px; }
-        .feed .event-card .card-text-box .card-company-name .company-name-town-wrapper {
-          width: 50%;
-          height: 100%;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap; }
-          .feed .event-card .card-text-box .card-company-name .company-name-town-wrapper a {
-            font-family: 'proxima';
-            font-weight: 300;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #fff;
-            padding-top: 4px; }
-          .feed .event-card .card-text-box .card-company-name .company-name-town-wrapper .event-town {
-            font-family: 'proxima';
-            font-weight: 300;
-            font-size: 10px;
-            margin-top: -5px;
-            color: #fff; }
-        .feed .event-card .card-text-box .card-company-name .more-icon {
-          width: 60px;
-          height: 100%;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          font-family: 'proxima';
-          font-weight: 300;
-          font-size: 30px;
-          color: #fff; }
-          .feed .event-card .card-text-box .card-company-name .more-icon img {
-            width: 40%;
-            height: auto; }
 
 .thumb-wrapper {
   display: -webkit-box;
